@@ -34,6 +34,8 @@ __pycache__/
 *.wav
 !tests/fixtures/**
 !tests/audio/langs/*.wav
+!tests/audio/jfk.flac
+!tests/gold/**
 tests/audio/langs/_raw/
 tests/audio/user_langs/
 tests/audio/user_zh_ja/

@@ -1,0 +1,148 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/de.wav",
+  "audio_seconds": 15.0,
+  "language": "de",
+  "mode": "verbatim",
+  "text": "im Besitz. Weitere Informationen und Hinweise zur Beteiligung an diesem Projekt gibt es bei LibriVox Punkt org. Der Sargmacher Die letzten Abseligkeiten des Sargmachers Adrian Brokhorow waren",
+  "tokens": null,
+  "words": [
+    {
+      "word": "im",
+      "start": 0.02,
+      "end": 0.12000000000000001
+    },
+    {
+      "word": "Besitz.",
+      "start": 0.12000000000000001,
+      "end": 0.5
+    },
+    {
+      "word": "Weitere",
+      "start": 1.18,
+      "end": 1.42
+    },
+    {
+      "word": "Informationen",
+      "start": 1.42,
+      "end": 2.08
+    },
+    {
+      "word": "und",
+      "start": 2.54,
+      "end": 2.64
+    },
+    {
+      "word": "Hinweise",
+      "start": 2.64,
+      "end": 2.96
+    },
+    {
+      "word": "zur",
+      "start": 3.08,
+      "end": 3.21
+    },
+    {
+      "word": "Beteiligung",
+      "start": 3.21,
+      "end": 3.8000000000000003
+    },
+    {
+      "word": "an",
+      "start": 3.8000000000000003,
+      "end": 3.94
+    },
+    {
+      "word": "diesem",
+      "start": 3.94,
+      "end": 4.17
+    },
+    {
+      "word": "Projekt",
+      "start": 4.17,
+      "end": 4.48
+    },
+    {
+      "word": "gibt",
+      "start": 4.48,
+      "end": 4.65
+    },
+    {
+      "word": "es",
+      "start": 4.65,
+      "end": 4.87
+    },
+    {
+      "word": "bei",
+      "start": 4.87,
+      "end": 5.08
+    },
+    {
+      "word": "LibriVox",
+      "start": 5.48,
+      "end": 5.94
+    },
+    {
+      "word": "Punkt",
+      "start": 6.08,
+      "end": 6.16
+    },
+    {
+      "word": "org.",
+      "start": 6.16,
+      "end": 6.5200000000000005
+    },
+    {
+      "word": "Der",
+      "start": 7.7,
+      "end": 7.859999999999999
+    },
+    {
+      "word": "Sargmacher",
+      "start": 7.859999999999999,
+      "end": 8.540000000000001
+    },
+    {
+      "word": "Die",
+      "start": 10.24,
+      "end": 10.280000000000001
+    },
+    {
+      "word": "letzten",
+      "start": 10.280000000000001,
+      "end": 10.7
+    },
+    {
+      "word": "Abseligkeiten",
+      "start": 10.7,
+      "end": 11.44
+    },
+    {
+      "word": "des",
+      "start": 11.74,
+      "end": 11.84
+    },
+    {
+      "word": "Sargmachers",
+      "start": 11.84,
+      "end": 12.540000000000001
+    },
+    {
+      "word": "Adrian",
+      "start": 12.84,
+      "end": 13.22
+    },
+    {
+      "word": "Brokhorow",
+      "start": 13.34,
+      "end": 13.98
+    },
+    {
+      "word": "waren",
+      "start": 14.68,
+      "end": 15.0
+    }
+  ]
+}

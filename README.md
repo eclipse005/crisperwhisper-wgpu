@@ -42,7 +42,7 @@ Not in the CPU milestone (and not started): English ForcedAligner, hotwords (Pro
 
 ## Build
 
-Rust 1.70+ (tested with 1.100), CMake, and a C compiler are required (vendored [libsoxr](https://github.com/chirlu/soxr) is built at compile time for HQ resampling). A C++ compiler is not required. The current build expects **Linux with glibc** (`libmvec`) and an **AVX-512-capable** C toolchain (`src/libmvec_wrap.c` is compiled with `-mavx512f`). macOS, Windows, and non-AVX-512 hosts are not supported yet. For official-identical MP3 decode, `libsndfile` (`libsndfile.so.1`) should be available at runtime; otherwise the Symphonia fallback applies the same Xing/Info delay trim.
+Rust 1.70+ (tested with 1.100), CMake, and a C compiler are required (vendored [libsoxr](https://github.com/chirlu/soxr) is built at compile time for HQ resampling). A C++ compiler is not required. The crate builds and runs on **Linux (glibc), Windows (MSVC or GNU), and macOS**. The fast CPU kernels (encoder GEMM, attention, softmax/GELU) are still **AVX-512 only**; hosts without AVX-512 (for example Intel Arrow Lake / Core Ultra 200) use the scalar fallback, and those timings must not be used as a product RTFx baseline. The glibc `libmvec` C shim (`src/libmvec_wrap.c`, compiled with `-mavx512f`) is built only on x86_64 Linux with glibc; other targets provide the same symbols with a scalar `libm` stand-in. For official bit-exact MP3 decode, `libsndfile` should be available at runtime on Unix (`libsndfile.so.1`, or `libsndfile.1.dylib` on macOS). Without it, WAV is decoded with hound and other formats fall back to Symphonia (same Xing/Info delay trim). The `wgpu` feature is still a placeholder and is not implemented.
 
 This repository does not set `target-cpu=native` by default. For the best SIMD on your machine, build with `RUSTFLAGS="-C target-cpu=native"`.
 
@@ -76,15 +76,18 @@ Temperature fallback and early-EOT recovery default to on (official longform). P
 
 ## Tests
 
+Public clips, the four result sets (official fp32 gold, Rust fp32, CT2 INT8, Rust INT8), and pass criteria are documented in [`tests/README.md`](tests/README.md). Official transformers fp32 is the accuracy gold; CT2 INT8 is only a speed and memory reference.
+
 ```bash
 cargo test --release --lib --tests
 
-# Compare a rust JSON dump to frozen gold
-python scripts/compare_transcripts.py --gold tests/fixtures/gold_turbo_jfk_verbatim_words.json \
-  --rust tests/fixtures/rust_turbo_jfk_verbatim.json
+# Compare a rust JSON dump to official fp32 gold
+python scripts/compare_transcripts.py \
+  --gold tests/gold/official_fp32/turbo_jfk_verbatim.json \
+  --rust tests/gold/rust_fp32/turbo_jfk_verbatim.json
 
-# Refresh gold (official Python package + weights)
-python scripts/dump_word_timings.py --model turbo --audio /path/to/jfk.flac --language en --out gold.json
+# Refresh official gold (Python package + weights you download yourself)
+python scripts/dump_word_timings.py --model turbo --audio tests/audio/jfk.flac --language en --out gold.json
 python scripts/dump_longform_gold.py --model turbo --audio /path/to/long.wav --out gold_long.json
 python scripts/dump_longform_gold.py --model turbo --audio /path/to/long.wav --full-defaults --resume --out gold_long_defaults.json
 ```

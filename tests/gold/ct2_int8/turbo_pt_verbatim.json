@@ -1,0 +1,148 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/pt.wav",
+  "audio_seconds": 15.0,
+  "language": "pt",
+  "mode": "verbatim",
+  "text": "Estão em domínio público. Para mais informações ou para ser um voluntário, por favor visite librivox.org. Gravado por Sandra Luna. Amor de Predição de Camilo Castelo Branco",
+  "tokens": null,
+  "words": [
+    {
+      "word": "Estão",
+      "start": 0.16,
+      "end": 0.36
+    },
+    {
+      "word": "em",
+      "start": 0.36,
+      "end": 0.47
+    },
+    {
+      "word": "domínio",
+      "start": 0.47,
+      "end": 0.76
+    },
+    {
+      "word": "público.",
+      "start": 0.88,
+      "end": 0.9400000000000001
+    },
+    {
+      "word": "Para",
+      "start": 2.1,
+      "end": 2.24
+    },
+    {
+      "word": "mais",
+      "start": 2.24,
+      "end": 2.55
+    },
+    {
+      "word": "informações",
+      "start": 2.55,
+      "end": 3.24
+    },
+    {
+      "word": "ou",
+      "start": 3.44,
+      "end": 3.56
+    },
+    {
+      "word": "para",
+      "start": 3.66,
+      "end": 3.75
+    },
+    {
+      "word": "ser",
+      "start": 3.75,
+      "end": 4.040000000000001
+    },
+    {
+      "word": "um",
+      "start": 4.040000000000001,
+      "end": 4.119999999999999
+    },
+    {
+      "word": "voluntário,",
+      "start": 4.119999999999999,
+      "end": 4.8
+    },
+    {
+      "word": "por",
+      "start": 5.32,
+      "end": 5.4399999999999995
+    },
+    {
+      "word": "favor",
+      "start": 5.4399999999999995,
+      "end": 5.74
+    },
+    {
+      "word": "visite",
+      "start": 5.74,
+      "end": 6.4
+    },
+    {
+      "word": "librivox.org.",
+      "start": 6.76,
+      "end": 7.58
+    },
+    {
+      "word": "Gravado",
+      "start": 9.540000000000001,
+      "end": 10.030000000000001
+    },
+    {
+      "word": "por",
+      "start": 10.030000000000001,
+      "end": 10.18
+    },
+    {
+      "word": "Sandra",
+      "start": 10.18,
+      "end": 10.52
+    },
+    {
+      "word": "Luna.",
+      "start": 10.52,
+      "end": 10.98
+    },
+    {
+      "word": "Amor",
+      "start": 11.98,
+      "end": 12.36
+    },
+    {
+      "word": "de",
+      "start": 12.36,
+      "end": 12.46
+    },
+    {
+      "word": "Predição",
+      "start": 12.46,
+      "end": 12.94
+    },
+    {
+      "word": "de",
+      "start": 13.700000000000001,
+      "end": 13.74
+    },
+    {
+      "word": "Camilo",
+      "start": 13.74,
+      "end": 14.09
+    },
+    {
+      "word": "Castelo",
+      "start": 14.09,
+      "end": 14.46
+    },
+    {
+      "word": "Branco",
+      "start": 14.46,
+      "end": 14.74
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/pl.wav",
+  "audio_seconds": 15.0,
+  "language": "pl",
+  "mode": "verbatim",
+  "text": "Więcej informacyi o nagraniach lub wolontariacie na stronie librivox kropka org czyta Piotr Nater. Jak chmura co grom po polach roznosi, obiegł honorat wszystkie kurytarze, wszędzie wiadomość.",
+  "tokens": null,
+  "words": [
+    {
+      "word": "Więcej",
+      "start": 1.36,
+      "end": 1.57
+    },
+    {
+      "word": "informacyi",
+      "start": 1.57,
+      "end": 2.18
+    },
+    {
+      "word": "o",
+      "start": 2.18,
+      "end": 2.2600000000000002
+    },
+    {
+      "word": "nagraniach",
+      "start": 2.2600000000000002,
+      "end": 2.66
+    },
+    {
+      "word": "lub",
+      "start": 2.66,
+      "end": 2.8
+    },
+    {
+      "word": "wolontariacie",
+      "start": 2.8,
+      "end": 3.48
+    },
+    {
+      "word": "na",
+      "start": 3.48,
+      "end": 3.66
+    },
+    {
+      "word": "stronie",
+      "start": 3.7800000000000002,
+      "end": 3.88
+    },
+    {
+      "word": "librivox",
+      "start": 3.88,
+      "end": 4.54
+    },
+    {
+      "word": "kropka",
+      "start": 4.7,
+      "end": 4.98
+    },
+    {
+      "word": "org",
+      "start": 4.98,
+      "end": 5.22
+    },
+    {
+      "word": "czyta",
+      "start": 6.12,
+      "end": 6.34
+    },
+    {
+      "word": "Piotr",
+      "start": 6.34,
+      "end": 6.620000000000001
+    },
+    {
+      "word": "Nater.",
+      "start": 6.620000000000001,
+      "end": 7.0
+    },
+    {
+      "word": "Jak",
+      "start": 9.0,
+      "end": 9.15
+    },
+    {
+      "word": "chmura",
+      "start": 9.15,
+      "end": 9.7
+    },
+    {
+      "word": "co",
+      "start": 9.7,
+      "end": 9.82
+    },
+    {
+      "word": "grom",
+      "start": 9.82,
+      "end": 10.2
+    },
+    {
+      "word": "po",
+      "start": 10.2,
+      "end": 10.350000000000001
+    },
+    {
+      "word": "polach",
+      "start": 10.350000000000001,
+      "end": 10.66
+    },
+    {
+      "word": "roznosi,",
+      "start": 10.66,
+      "end": 11.440000000000001
+    },
+    {
+      "word": "obiegł",
+      "start": 11.440000000000001,
+      "end": 11.760000000000002
+    },
+    {
+      "word": "honorat",
+      "start": 11.760000000000002,
+      "end": 12.34
+    },
+    {
+      "word": "wszystkie",
+      "start": 12.34,
+      "end": 12.540000000000001
+    },
+    {
+      "word": "kurytarze,",
+      "start": 12.72,
+      "end": 13.46
+    },
+    {
+      "word": "wszędzie",
+      "start": 14.06,
+      "end": 14.4
+    },
+    {
+      "word": "wiadomość.",
+      "start": 14.4,
+      "end": 15.02
+    }
+  ]
+}

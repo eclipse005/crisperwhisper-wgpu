@@ -1,0 +1,179 @@
+{
+  "audio": "tests/audio/langs/es.wav",
+  "audio_seconds": 15.0,
+  "language": "es",
+  "mode": "verbatim",
+  "model_dir": "nyralabs/CrisperWhisper2.0_turbo",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50262,
+    50360,
+    50364
+  ],
+  "text": "Ser voluntario, por favor visite LibriVox punto org. Grabada por Alejandro García en la Ciudad de México. Primera parte del ingenioso Hidalgo Don",
+  "tokens": [
+    31859,
+    17911,
+    4912,
+    11,
+    1515,
+    2294,
+    1452,
+    642,
+    15834,
+    470,
+    53,
+    5230,
+    14326,
+    14045,
+    13,
+    20357,
+    1538,
+    1515,
+    44568,
+    29173,
+    7995,
+    31298,
+    465,
+    635,
+    20188,
+    532,
+    345,
+    368,
+    28128,
+    13,
+    19671,
+    1663,
+    6975,
+    1103,
+    21600,
+    23540,
+    389,
+    22151,
+    1571,
+    1468,
+    50257
+  ],
+  "words": [
+    {
+      "end": 0.06,
+      "start": 0.04,
+      "word": "Ser"
+    },
+    {
+      "end": 0.78,
+      "start": 0.06,
+      "word": "voluntario,"
+    },
+    {
+      "end": 1.4,
+      "start": 1.28,
+      "word": "por"
+    },
+    {
+      "end": 1.78,
+      "start": 1.4,
+      "word": "favor"
+    },
+    {
+      "end": 2.24,
+      "start": 2.0,
+      "word": "visite"
+    },
+    {
+      "end": 3.02,
+      "start": 2.44,
+      "word": "LibriVox"
+    },
+    {
+      "end": 3.52,
+      "start": 3.46,
+      "word": "punto"
+    },
+    {
+      "end": 4.24,
+      "start": 4.1,
+      "word": "org."
+    },
+    {
+      "end": 7.26,
+      "start": 6.78,
+      "word": "Grabada"
+    },
+    {
+      "end": 7.6000000000000005,
+      "start": 7.38,
+      "word": "por"
+    },
+    {
+      "end": 8.48,
+      "start": 7.82,
+      "word": "Alejandro"
+    },
+    {
+      "end": 9.1,
+      "start": 8.48,
+      "word": "García"
+    },
+    {
+      "end": 9.72,
+      "start": 9.6,
+      "word": "en"
+    },
+    {
+      "end": 9.86,
+      "start": 9.72,
+      "word": "la"
+    },
+    {
+      "end": 10.280000000000001,
+      "start": 9.86,
+      "word": "Ciudad"
+    },
+    {
+      "end": 10.42,
+      "start": 10.280000000000001,
+      "word": "de"
+    },
+    {
+      "end": 10.94,
+      "start": 10.42,
+      "word": "México."
+    },
+    {
+      "end": 12.469999999999999,
+      "start": 12.02,
+      "word": "Primera"
+    },
+    {
+      "end": 13.02,
+      "start": 12.469999999999999,
+      "word": "parte"
+    },
+    {
+      "end": 13.24,
+      "start": 13.02,
+      "word": "del"
+    },
+    {
+      "end": 13.969999999999999,
+      "start": 13.24,
+      "word": "ingenioso"
+    },
+    {
+      "end": 14.58,
+      "start": 13.969999999999999,
+      "word": "Hidalgo"
+    },
+    {
+      "end": 14.86,
+      "start": 14.780000000000001,
+      "word": "Don"
+    }
+  ]
+}

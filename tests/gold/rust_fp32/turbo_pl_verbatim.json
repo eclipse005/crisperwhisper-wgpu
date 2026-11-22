@@ -1,0 +1,225 @@
+{
+  "audio": "tests/audio/langs/pl.wav",
+  "audio_seconds": 15.0,
+  "language": "pl",
+  "mode": "verbatim",
+  "model_dir": "nyralabs/CrisperWhisper2.0_turbo",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50269,
+    50360,
+    50364
+  ],
+  "text": "Więcej informacyi o nagraniach lub wolontariacie na stronie librivox kropka org czyta Piotr Nater. Jak chmura co grom po polach roznosi, obiegł honorat wszystkie kurytarze, wszędzie wiadomość.",
+  "tokens": [
+    54,
+    5034,
+    20811,
+    1356,
+    2551,
+    72,
+    277,
+    17096,
+    81,
+    3782,
+    608,
+    15980,
+    20960,
+    896,
+    3504,
+    30805,
+    1667,
+    1056,
+    32242,
+    22854,
+    470,
+    3080,
+    87,
+    350,
+    1513,
+    2330,
+    14045,
+    6430,
+    1328,
+    430,
+    6471,
+    81,
+    426,
+    771,
+    13,
+    15029,
+    417,
+    76,
+    2991,
+    598,
+    677,
+    298,
+    714,
+    1180,
+    608,
+    9544,
+    16751,
+    72,
+    11,
+    1111,
+    20408,
+    1221,
+    5968,
+    267,
+    31723,
+    350,
+    2598,
+    23480,
+    1381,
+    11,
+    38322,
+    42643,
+    26393,
+    40633,
+    7753,
+    13,
+    50257
+  ],
+  "words": [
+    {
+      "end": 1.57,
+      "start": 1.36,
+      "word": "Więcej"
+    },
+    {
+      "end": 2.18,
+      "start": 1.57,
+      "word": "informacyi"
+    },
+    {
+      "end": 2.2600000000000002,
+      "start": 2.18,
+      "word": "o"
+    },
+    {
+      "end": 2.66,
+      "start": 2.2600000000000002,
+      "word": "nagraniach"
+    },
+    {
+      "end": 2.8,
+      "start": 2.66,
+      "word": "lub"
+    },
+    {
+      "end": 3.48,
+      "start": 2.8,
+      "word": "wolontariacie"
+    },
+    {
+      "end": 3.66,
+      "start": 3.48,
+      "word": "na"
+    },
+    {
+      "end": 3.88,
+      "start": 3.7800000000000002,
+      "word": "stronie"
+    },
+    {
+      "end": 4.54,
+      "start": 3.88,
+      "word": "librivox"
+    },
+    {
+      "end": 4.98,
+      "start": 4.7,
+      "word": "kropka"
+    },
+    {
+      "end": 5.22,
+      "start": 4.98,
+      "word": "org"
+    },
+    {
+      "end": 6.34,
+      "start": 6.12,
+      "word": "czyta"
+    },
+    {
+      "end": 6.5200000000000005,
+      "start": 6.34,
+      "word": "Piotr"
+    },
+    {
+      "end": 7.0,
+      "start": 6.5200000000000005,
+      "word": "Nater."
+    },
+    {
+      "end": 9.15,
+      "start": 9.0,
+      "word": "Jak"
+    },
+    {
+      "end": 9.7,
+      "start": 9.15,
+      "word": "chmura"
+    },
+    {
+      "end": 9.86,
+      "start": 9.7,
+      "word": "co"
+    },
+    {
+      "end": 10.2,
+      "start": 9.86,
+      "word": "grom"
+    },
+    {
+      "end": 10.350000000000001,
+      "start": 10.2,
+      "word": "po"
+    },
+    {
+      "end": 10.66,
+      "start": 10.350000000000001,
+      "word": "polach"
+    },
+    {
+      "end": 11.440000000000001,
+      "start": 10.66,
+      "word": "roznosi,"
+    },
+    {
+      "end": 11.72,
+      "start": 11.440000000000001,
+      "word": "obiegł"
+    },
+    {
+      "end": 12.34,
+      "start": 11.92,
+      "word": "honorat"
+    },
+    {
+      "end": 12.540000000000001,
+      "start": 12.34,
+      "word": "wszystkie"
+    },
+    {
+      "end": 13.46,
+      "start": 12.72,
+      "word": "kurytarze,"
+    },
+    {
+      "end": 14.36,
+      "start": 14.06,
+      "word": "wszędzie"
+    },
+    {
+      "end": 15.0,
+      "start": 14.36,
+      "word": "wiadomość."
+    }
+  ]
+}

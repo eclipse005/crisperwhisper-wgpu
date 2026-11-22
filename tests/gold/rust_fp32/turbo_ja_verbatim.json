@@ -1,0 +1,36 @@
+{
+  "audio": "tests/audio/langs/ja.wav",
+  "audio_seconds": 1.4373125,
+  "language": "ja",
+  "mode": "verbatim",
+  "model_dir": "nyralabs/CrisperWhisper2.0_turbo",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50266,
+    50360,
+    50364
+  ],
+  "text": "BBC",
+  "tokens": [
+    33,
+    7869,
+    50257
+  ],
+  "words": [
+    {
+      "end": 0.18,
+      "start": 0.02,
+      "word": "B"
+    },
+    {
+      "end": 0.88,
+      "start": 0.18,
+      "word": "BC"
+    }
+  ]
+}

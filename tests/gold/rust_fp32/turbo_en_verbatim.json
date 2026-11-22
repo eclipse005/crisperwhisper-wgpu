@@ -1,0 +1,242 @@
+{
+  "audio": "tests/audio/langs/en.wav",
+  "audio_seconds": 15.0,
+  "language": "en",
+  "mode": "verbatim",
+  "model_dir": "nyralabs/CrisperWhisper2.0_turbo",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50259,
+    50360,
+    50364
+  ],
+  "text": "This is a LibriVox recording. All LibriVox recordings are in the public domain. For more information, and to find out how you can volunteer, please visit LibriVox dot org. Recording by Moira Fogarty.",
+  "tokens": [
+    5723,
+    307,
+    257,
+    15834,
+    470,
+    53,
+    5230,
+    6613,
+    13,
+    1057,
+    15834,
+    470,
+    53,
+    5230,
+    25162,
+    366,
+    294,
+    264,
+    1908,
+    9274,
+    13,
+    1171,
+    544,
+    1589,
+    11,
+    293,
+    281,
+    915,
+    484,
+    577,
+    291,
+    393,
+    13835,
+    11,
+    1767,
+    3441,
+    15834,
+    470,
+    53,
+    5230,
+    5893,
+    14045,
+    13,
+    9647,
+    3357,
+    538,
+    3335,
+    4271,
+    479,
+    664,
+    446,
+    88,
+    13,
+    50257
+  ],
+  "words": [
+    {
+      "end": 1.76,
+      "start": 1.56,
+      "word": "This"
+    },
+    {
+      "end": 1.98,
+      "start": 1.76,
+      "word": "is"
+    },
+    {
+      "end": 2.1,
+      "start": 1.98,
+      "word": "a"
+    },
+    {
+      "end": 2.66,
+      "start": 2.1,
+      "word": "LibriVox"
+    },
+    {
+      "end": 3.2,
+      "start": 2.66,
+      "word": "recording."
+    },
+    {
+      "end": 4.0600000000000005,
+      "start": 3.9,
+      "word": "All"
+    },
+    {
+      "end": 4.52,
+      "start": 4.0600000000000005,
+      "word": "LibriVox"
+    },
+    {
+      "end": 5.0200000000000005,
+      "start": 4.52,
+      "word": "recordings"
+    },
+    {
+      "end": 5.4,
+      "start": 5.26,
+      "word": "are"
+    },
+    {
+      "end": 5.52,
+      "start": 5.4,
+      "word": "in"
+    },
+    {
+      "end": 5.58,
+      "start": 5.52,
+      "word": "the"
+    },
+    {
+      "end": 5.9,
+      "start": 5.58,
+      "word": "public"
+    },
+    {
+      "end": 6.36,
+      "start": 5.9,
+      "word": "domain."
+    },
+    {
+      "end": 7.32,
+      "start": 7.18,
+      "word": "For"
+    },
+    {
+      "end": 7.5,
+      "start": 7.32,
+      "word": "more"
+    },
+    {
+      "end": 8.040000000000001,
+      "start": 7.5,
+      "word": "information,"
+    },
+    {
+      "end": 8.34,
+      "start": 8.24,
+      "word": "and"
+    },
+    {
+      "end": 8.440000000000001,
+      "start": 8.34,
+      "word": "to"
+    },
+    {
+      "end": 8.66,
+      "start": 8.440000000000001,
+      "word": "find"
+    },
+    {
+      "end": 8.8,
+      "start": 8.66,
+      "word": "out"
+    },
+    {
+      "end": 8.96,
+      "start": 8.8,
+      "word": "how"
+    },
+    {
+      "end": 9.16,
+      "start": 8.96,
+      "word": "you"
+    },
+    {
+      "end": 9.280000000000001,
+      "start": 9.16,
+      "word": "can"
+    },
+    {
+      "end": 9.94,
+      "start": 9.280000000000001,
+      "word": "volunteer,"
+    },
+    {
+      "end": 10.65,
+      "start": 10.38,
+      "word": "please"
+    },
+    {
+      "end": 10.98,
+      "start": 10.65,
+      "word": "visit"
+    },
+    {
+      "end": 11.8,
+      "start": 10.98,
+      "word": "LibriVox"
+    },
+    {
+      "end": 12.04,
+      "start": 11.92,
+      "word": "dot"
+    },
+    {
+      "end": 12.42,
+      "start": 12.04,
+      "word": "org."
+    },
+    {
+      "end": 13.82,
+      "start": 13.38,
+      "word": "Recording"
+    },
+    {
+      "end": 14.120000000000001,
+      "start": 14.0,
+      "word": "by"
+    },
+    {
+      "end": 14.56,
+      "start": 14.120000000000001,
+      "word": "Moira"
+    },
+    {
+      "end": 15.02,
+      "start": 14.56,
+      "word": "Fogarty."
+    }
+  ]
+}

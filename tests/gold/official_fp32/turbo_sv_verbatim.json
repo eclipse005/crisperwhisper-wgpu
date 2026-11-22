@@ -1,0 +1,256 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/sv.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "sv",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50273,
+    50360,
+    50364
+  ],
+  "tokens": [
+    37,
+    4668,
+    1908,
+    9274,
+    13,
+    20665,
+    3551,
+    1589,
+    12519,
+    4816,
+    951,
+    12957,
+    424,
+    22098,
+    294,
+    4170,
+    15834,
+    470,
+    53,
+    5230,
+    39561,
+    14045,
+    13,
+    294,
+    75,
+    13555,
+    773,
+    41563,
+    497,
+    401,
+    4483,
+    13,
+    30978,
+    6141,
+    82,
+    3015,
+    3795,
+    25299,
+    4058,
+    811,
+    1305,
+    37763,
+    432,
+    8251,
+    973,
+    4508,
+    70,
+    13
+  ],
+  "text": "Fria public domain. För mer information eller för att bidra gå in på LibriVox punkt org. inläsning Lars Rolander. Baron Olsson och andra historier av Sigge Strömberg.",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    48,
+    1500
+  ],
+  "words": [
+    {
+      "word": "Fria",
+      "start": 0.02,
+      "end": 0.5
+    },
+    {
+      "word": "public",
+      "start": 0.5,
+      "end": 0.96
+    },
+    {
+      "word": "domain.",
+      "start": 1.32,
+      "end": 1.58
+    },
+    {
+      "word": "För",
+      "start": 2.58,
+      "end": 2.7
+    },
+    {
+      "word": "mer",
+      "start": 2.8000000000000003,
+      "end": 2.9299999999999997
+    },
+    {
+      "word": "information",
+      "start": 2.9299999999999997,
+      "end": 3.7
+    },
+    {
+      "word": "eller",
+      "start": 3.7,
+      "end": 3.96
+    },
+    {
+      "word": "för",
+      "start": 3.96,
+      "end": 4.0600000000000005
+    },
+    {
+      "word": "att",
+      "start": 4.0600000000000005,
+      "end": 4.2
+    },
+    {
+      "word": "bidra",
+      "start": 4.32,
+      "end": 4.74
+    },
+    {
+      "word": "gå",
+      "start": 4.74,
+      "end": 5.0
+    },
+    {
+      "word": "in",
+      "start": 5.0,
+      "end": 5.18
+    },
+    {
+      "word": "på",
+      "start": 5.28,
+      "end": 5.34
+    },
+    {
+      "word": "LibriVox",
+      "start": 5.34,
+      "end": 5.92
+    },
+    {
+      "word": "punkt",
+      "start": 6.2,
+      "end": 6.3
+    },
+    {
+      "word": "org.",
+      "start": 6.54,
+      "end": 6.74
+    },
+    {
+      "word": "inläsning",
+      "start": 7.46,
+      "end": 8.14
+    },
+    {
+      "word": "Lars",
+      "start": 8.14,
+      "end": 8.56
+    },
+    {
+      "word": "Rolander.",
+      "start": 8.98,
+      "end": 9.3
+    },
+    {
+      "word": "Baron",
+      "start": 11.68,
+      "end": 11.92
+    },
+    {
+      "word": "Olsson",
+      "start": 11.92,
+      "end": 12.4
+    },
+    {
+      "word": "och",
+      "start": 12.4,
+      "end": 12.620000000000001
+    },
+    {
+      "word": "andra",
+      "start": 12.620000000000001,
+      "end": 12.86
+    },
+    {
+      "word": "historier",
+      "start": 12.86,
+      "end": 13.4
+    },
+    {
+      "word": "av",
+      "start": 13.4,
+      "end": 13.55
+    },
+    {
+      "word": "Sigge",
+      "start": 13.55,
+      "end": 13.780000000000001
+    },
+    {
+      "word": "Strömberg.",
+      "start": 13.92,
+      "end": 14.48
+    }
+  ]
+}

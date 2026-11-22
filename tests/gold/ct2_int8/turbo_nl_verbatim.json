@@ -1,0 +1,118 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/nl.wav",
+  "audio_seconds": 15.0,
+  "language": "nl",
+  "mode": "verbatim",
+  "text": "Opname is vrij van auteursrechten. Opname door Mark Saoenders, hoofdstuk veertien [sigh] het is een ellendig dat men zich beschaamd voelt.",
+  "tokens": null,
+  "words": [
+    {
+      "word": "Opname",
+      "start": 0.04,
+      "end": 0.34
+    },
+    {
+      "word": "is",
+      "start": 0.8200000000000001,
+      "end": 0.88
+    },
+    {
+      "word": "vrij",
+      "start": 0.88,
+      "end": 1.1600000000000001
+    },
+    {
+      "word": "van",
+      "start": 1.1600000000000001,
+      "end": 1.42
+    },
+    {
+      "word": "auteursrechten.",
+      "start": 1.42,
+      "end": 2.44
+    },
+    {
+      "word": "Opname",
+      "start": 3.2800000000000002,
+      "end": 3.6900000000000004
+    },
+    {
+      "word": "door",
+      "start": 3.6900000000000004,
+      "end": 4.0
+    },
+    {
+      "word": "Mark",
+      "start": 4.0,
+      "end": 4.279999999999999
+    },
+    {
+      "word": "Saoenders,",
+      "start": 4.279999999999999,
+      "end": 4.82
+    },
+    {
+      "word": "hoofdstuk",
+      "start": 5.9,
+      "end": 6.54
+    },
+    {
+      "word": "veertien",
+      "start": 6.640000000000001,
+      "end": 7.28
+    },
+    {
+      "word": "[sigh]",
+      "start": 10.36,
+      "end": 10.36
+    },
+    {
+      "word": "het",
+      "start": 10.78,
+      "end": 10.969999999999999
+    },
+    {
+      "word": "is",
+      "start": 10.969999999999999,
+      "end": 11.14
+    },
+    {
+      "word": "een",
+      "start": 11.14,
+      "end": 11.3
+    },
+    {
+      "word": "ellendig",
+      "start": 11.3,
+      "end": 11.870000000000001
+    },
+    {
+      "word": "dat",
+      "start": 11.870000000000001,
+      "end": 12.16
+    },
+    {
+      "word": "men",
+      "start": 12.82,
+      "end": 13.16
+    },
+    {
+      "word": "zich",
+      "start": 13.16,
+      "end": 13.440000000000001
+    },
+    {
+      "word": "beschaamd",
+      "start": 13.440000000000001,
+      "end": 13.98
+    },
+    {
+      "word": "voelt.",
+      "start": 13.98,
+      "end": 14.620000000000001
+    }
+  ]
+}

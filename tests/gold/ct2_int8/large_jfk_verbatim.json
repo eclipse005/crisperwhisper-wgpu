@@ -1,0 +1,123 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_large",
+  "audio": "tests/audio/jfk.flac",
+  "audio_seconds": 11.0,
+  "language": "en",
+  "mode": "verbatim",
+  "text": "And so, my fellow Americans, ask not what your country can do for you, ask what you can do for your country.",
+  "tokens": null,
+  "words": [
+    {
+      "word": "And",
+      "start": 0.32,
+      "end": 0.54
+    },
+    {
+      "word": "so,",
+      "start": 0.54,
+      "end": 1.1
+    },
+    {
+      "word": "my",
+      "start": 1.1,
+      "end": 1.26
+    },
+    {
+      "word": "fellow",
+      "start": 1.26,
+      "end": 1.62
+    },
+    {
+      "word": "Americans,",
+      "start": 1.62,
+      "end": 2.18
+    },
+    {
+      "word": "ask",
+      "start": 3.3000000000000003,
+      "end": 3.72
+    },
+    {
+      "word": "not",
+      "start": 3.98,
+      "end": 4.3
+    },
+    {
+      "word": "what",
+      "start": 5.42,
+      "end": 5.58
+    },
+    {
+      "word": "your",
+      "start": 5.58,
+      "end": 5.859999999999999
+    },
+    {
+      "word": "country",
+      "start": 5.859999999999999,
+      "end": 6.380000000000001
+    },
+    {
+      "word": "can",
+      "start": 6.380000000000001,
+      "end": 6.640000000000001
+    },
+    {
+      "word": "do",
+      "start": 6.640000000000001,
+      "end": 6.880000000000001
+    },
+    {
+      "word": "for",
+      "start": 6.880000000000001,
+      "end": 7.08
+    },
+    {
+      "word": "you,",
+      "start": 7.08,
+      "end": 7.5200000000000005
+    },
+    {
+      "word": "ask",
+      "start": 8.16,
+      "end": 8.57
+    },
+    {
+      "word": "what",
+      "start": 8.57,
+      "end": 8.76
+    },
+    {
+      "word": "you",
+      "start": 8.76,
+      "end": 9.120000000000001
+    },
+    {
+      "word": "can",
+      "start": 9.120000000000001,
+      "end": 9.39
+    },
+    {
+      "word": "do",
+      "start": 9.39,
+      "end": 9.61
+    },
+    {
+      "word": "for",
+      "start": 9.61,
+      "end": 9.8
+    },
+    {
+      "word": "your",
+      "start": 9.8,
+      "end": 10.0
+    },
+    {
+      "word": "country.",
+      "start": 10.0,
+      "end": 10.52
+    }
+  ]
+}

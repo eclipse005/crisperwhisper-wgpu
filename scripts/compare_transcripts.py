@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-"""Compare a rust JSON dump against transformers-fp32 gold (text + word timings)."""
+"""Compare a rust JSON dump against official transformers-fp32 gold (text + word timings).
+
+Example:
+
+    python scripts/compare_transcripts.py \
+      --gold tests/gold/official_fp32/turbo_jfk_verbatim.json \
+      --rust tests/gold/rust_fp32/turbo_jfk_verbatim.json
+
+Official transformers fp32 is the accuracy gold. Optional Rust INT8 dumps should
+also be compared to that gold, not to tests/gold/ct2_int8/ (CT2 INT8 is a
+speed/memory reference only).
+"""
 from __future__ import annotations
 
 import argparse

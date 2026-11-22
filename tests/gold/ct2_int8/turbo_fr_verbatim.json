@@ -1,0 +1,143 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/fr.wav",
+  "audio_seconds": 15.0,
+  "language": "fr",
+  "mode": "verbatim",
+  "text": "Rendez-vous sur LibriVox point org. Enregistré par Faris. Fable de La Fontaine, livre premier de Jean de La Fontaine. Fable vingt, le coq et la pêche.",
+  "tokens": null,
+  "words": [
+    {
+      "word": "Rendez-vous",
+      "start": 0.02,
+      "end": 0.44
+    },
+    {
+      "word": "sur",
+      "start": 0.44,
+      "end": 0.68
+    },
+    {
+      "word": "LibriVox",
+      "start": 1.12,
+      "end": 1.8
+    },
+    {
+      "word": "point",
+      "start": 2.08,
+      "end": 2.24
+    },
+    {
+      "word": "org.",
+      "start": 2.56,
+      "end": 2.88
+    },
+    {
+      "word": "Enregistré",
+      "start": 4.5600000000000005,
+      "end": 5.17
+    },
+    {
+      "word": "par",
+      "start": 5.17,
+      "end": 5.34
+    },
+    {
+      "word": "Faris.",
+      "start": 5.34,
+      "end": 5.8
+    },
+    {
+      "word": "Fable",
+      "start": 7.5200000000000005,
+      "end": 7.85
+    },
+    {
+      "word": "de",
+      "start": 7.85,
+      "end": 7.960000000000001
+    },
+    {
+      "word": "La",
+      "start": 7.960000000000001,
+      "end": 8.06
+    },
+    {
+      "word": "Fontaine,",
+      "start": 8.06,
+      "end": 8.64
+    },
+    {
+      "word": "livre",
+      "start": 8.86,
+      "end": 9.06
+    },
+    {
+      "word": "premier",
+      "start": 9.06,
+      "end": 9.48
+    },
+    {
+      "word": "de",
+      "start": 9.48,
+      "end": 9.72
+    },
+    {
+      "word": "Jean",
+      "start": 10.14,
+      "end": 10.36
+    },
+    {
+      "word": "de",
+      "start": 10.36,
+      "end": 10.48
+    },
+    {
+      "word": "La",
+      "start": 10.48,
+      "end": 10.600000000000001
+    },
+    {
+      "word": "Fontaine.",
+      "start": 10.600000000000001,
+      "end": 11.1
+    },
+    {
+      "word": "Fable",
+      "start": 12.6,
+      "end": 12.92
+    },
+    {
+      "word": "vingt,",
+      "start": 12.92,
+      "end": 13.18
+    },
+    {
+      "word": "le",
+      "start": 14.14,
+      "end": 14.29
+    },
+    {
+      "word": "coq",
+      "start": 14.29,
+      "end": 14.56
+    },
+    {
+      "word": "et",
+      "start": 14.72,
+      "end": 14.82
+    },
+    {
+      "word": "la",
+      "start": 14.82,
+      "end": 14.940000000000001
+    },
+    {
+      "word": "pêche.",
+      "start": 14.940000000000001,
+      "end": 15.02
+    }
+  ]
+}

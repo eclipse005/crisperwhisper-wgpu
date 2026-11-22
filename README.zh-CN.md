@@ -42,7 +42,7 @@ CPU 里程碑不做（也尚未开始）：English ForcedAligner、热词（仅 
 
 ## 编译
 
-需要 Rust 1.70+（已在 1.100 上测试）、CMake 和 C 编译器（编译时会构建 vendored [libsoxr](https://github.com/chirlu/soxr) 做 HQ 重采样）。不需要 C++ 编译器。当前构建要求 **Linux + glibc**（`libmvec`）以及支持 **AVX-512** 的 C 工具链（`src/libmvec_wrap.c` 会以 `-mavx512f` 编译）。macOS、Windows 以及没有 AVX-512 的主机目前还不能构建。要与官方逐样点一致地解码 MP3，运行时需能找到 `libsndfile.so.1`；否则走 Symphonia 回退并对 Xing/Info 延迟做同样裁剪。
+需要 Rust 1.70+（已在 1.100 上测试）、CMake 和 C 编译器（编译时会构建 vendored [libsoxr](https://github.com/chirlu/soxr) 做 HQ 重采样）。不需要 C++ 编译器。现在可以在 **Linux（glibc）、Windows（MSVC 或 GNU）和 macOS** 上编译并运行。快速 CPU 内核（编码器 GEMM、注意力、softmax/GELU）目前仍只走 **AVX-512**；没有 AVX-512 的机器（例如 Intel Arrow Lake / Core Ultra 200）会落到标量回退，测出的速度不能当作产品 RTFx 基线。glibc `libmvec` 的 C 包装（`src/libmvec_wrap.c`，以 `-mavx512f` 编译）只在 x86_64 Linux + glibc 上构建；其他目标用标量 `libm` 提供同名符号。要与官方逐样点一致地解码 MP3，Unix 运行时仍需能找到 `libsndfile`（`libsndfile.so.1`，macOS 上也可以是 `libsndfile.1.dylib`）。没有时，WAV 走 hound，其他格式走 Symphonia 回退（同样会裁剪 Xing/Info 延迟）。`wgpu` feature 仍是占位，尚未实现。
 
 本仓库默认不会设置 `target-cpu=native`。若要在本机用上最好的 SIMD，编译时加上 `RUSTFLAGS="-C target-cpu=native"`。
 
@@ -76,11 +76,13 @@ temperature fallback 与 early-EOT 默认开启（官方 longform）。只跑贪
 
 ## 测试
 
+公开音频、四套结果（官方 fp32 金标、Rust fp32、CT2 INT8、Rust INT8）和通过标准见 [`tests/README.zh-CN.md`](tests/README.zh-CN.md)。准确度以官方 transformers fp32 为金标；CT2 INT8 只用于速度和内存对比。
+
 ```bash
 cargo test --release --lib --tests
 python scripts/compare_transcripts.py \
-  --gold tests/fixtures/gold_turbo_jfk_verbatim_words.json \
-  --rust tests/fixtures/rust_turbo_jfk_verbatim.json
+  --gold tests/gold/official_fp32/turbo_jfk_verbatim.json \
+  --rust tests/gold/rust_fp32/turbo_jfk_verbatim.json
 ```
 
 语种素材与许可见 `tests/audio/langs/SOURCES.md`。

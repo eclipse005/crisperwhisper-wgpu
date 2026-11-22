@@ -1,0 +1,203 @@
+{
+  "audio": "tests/audio/langs/fr.wav",
+  "audio_seconds": 15.0,
+  "language": "fr",
+  "mode": "verbatim",
+  "model_dir": "nyralabs/CrisperWhisper2.0_turbo",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50265,
+    50360,
+    50364
+  ],
+  "text": "Rendez-vous sur LibriVox point org. Enregistré par Faris. Fable de la Fontaine, livre premier de Jean de La Fontaine. Fable vingt, le coq et la piste.",
+  "tokens": [
+    49,
+    521,
+    4371,
+    12,
+    16514,
+    1022,
+    15834,
+    470,
+    53,
+    5230,
+    935,
+    14045,
+    13,
+    2193,
+    48933,
+    10521,
+    971,
+    9067,
+    271,
+    13,
+    479,
+    712,
+    368,
+    635,
+    43901,
+    7119,
+    11,
+    24735,
+    12689,
+    368,
+    13854,
+    368,
+    2369,
+    43901,
+    7119,
+    13,
+    479,
+    712,
+    371,
+    23190,
+    11,
+    476,
+    598,
+    80,
+    1030,
+    635,
+    280,
+    8375,
+    13,
+    50257
+  ],
+  "words": [
+    {
+      "end": 0.44,
+      "start": 0.02,
+      "word": "Rendez-vous"
+    },
+    {
+      "end": 0.68,
+      "start": 0.44,
+      "word": "sur"
+    },
+    {
+      "end": 1.8,
+      "start": 1.12,
+      "word": "LibriVox"
+    },
+    {
+      "end": 2.24,
+      "start": 2.08,
+      "word": "point"
+    },
+    {
+      "end": 2.88,
+      "start": 2.56,
+      "word": "org."
+    },
+    {
+      "end": 5.18,
+      "start": 4.5600000000000005,
+      "word": "Enregistré"
+    },
+    {
+      "end": 5.34,
+      "start": 5.18,
+      "word": "par"
+    },
+    {
+      "end": 5.8,
+      "start": 5.34,
+      "word": "Faris."
+    },
+    {
+      "end": 7.85,
+      "start": 7.5200000000000005,
+      "word": "Fable"
+    },
+    {
+      "end": 7.960000000000001,
+      "start": 7.85,
+      "word": "de"
+    },
+    {
+      "end": 8.06,
+      "start": 7.960000000000001,
+      "word": "la"
+    },
+    {
+      "end": 8.64,
+      "start": 8.06,
+      "word": "Fontaine,"
+    },
+    {
+      "end": 9.06,
+      "start": 8.86,
+      "word": "livre"
+    },
+    {
+      "end": 9.48,
+      "start": 9.06,
+      "word": "premier"
+    },
+    {
+      "end": 9.68,
+      "start": 9.48,
+      "word": "de"
+    },
+    {
+      "end": 10.36,
+      "start": 10.14,
+      "word": "Jean"
+    },
+    {
+      "end": 10.48,
+      "start": 10.36,
+      "word": "de"
+    },
+    {
+      "end": 10.58,
+      "start": 10.48,
+      "word": "La"
+    },
+    {
+      "end": 11.1,
+      "start": 10.58,
+      "word": "Fontaine."
+    },
+    {
+      "end": 12.92,
+      "start": 12.6,
+      "word": "Fable"
+    },
+    {
+      "end": 13.18,
+      "start": 12.92,
+      "word": "vingt,"
+    },
+    {
+      "end": 14.29,
+      "start": 14.16,
+      "word": "le"
+    },
+    {
+      "end": 14.56,
+      "start": 14.29,
+      "word": "coq"
+    },
+    {
+      "end": 14.82,
+      "start": 14.72,
+      "word": "et"
+    },
+    {
+      "end": 14.940000000000001,
+      "start": 14.82,
+      "word": "la"
+    },
+    {
+      "end": 15.02,
+      "start": 14.940000000000001,
+      "word": "piste."
+    }
+  ]
+}

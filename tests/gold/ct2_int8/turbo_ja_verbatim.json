@@ -1,0 +1,23 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/ja.wav",
+  "audio_seconds": 1.4373125,
+  "language": "ja",
+  "mode": "verbatim",
+  "text": "BBC",
+  "tokens": null,
+  "words": [
+    {
+      "word": "B",
+      "start": 0.02,
+      "end": 0.18
+    },
+    {
+      "word": "BC",
+      "start": 0.18,
+      "end": 0.88
+    }
+  ]
+}

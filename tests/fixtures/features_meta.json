@@ -91,7 +91,7 @@
         80,
         3000
       ],
-      "source": "/workspace/crisperwhisper-run/audio/jfk.flac",
+      "source": "tests/audio/jfk.flac",
       "extractor": "crisperwhisper.features.FeatureExtractor",
       "padding": 0,
       "padded_to_samples": 480000,
@@ -112,7 +112,7 @@
         128,
         3000
       ],
-      "source": "/workspace/crisperwhisper-run/audio/jfk.flac",
+      "source": "tests/audio/jfk.flac",
       "extractor": "crisperwhisper.features.FeatureExtractor",
       "padding": 0,
       "padded_to_samples": 480000,
@@ -133,7 +133,7 @@
         80,
         3000
       ],
-      "source": "/workspace/crisperwhisper-run/audio/jfk_6s.wav",
+      "source": "first 6s of tests/audio/jfk.flac",
       "extractor": "crisperwhisper.features.FeatureExtractor",
       "padding": 0,
       "padded_to_samples": 480000,
@@ -154,7 +154,7 @@
         128,
         3000
       ],
-      "source": "/workspace/crisperwhisper-run/audio/jfk_6s.wav",
+      "source": "first 6s of tests/audio/jfk.flac",
       "extractor": "crisperwhisper.features.FeatureExtractor",
       "padding": 0,
       "padded_to_samples": 480000,

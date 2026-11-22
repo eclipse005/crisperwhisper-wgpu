@@ -1,0 +1,148 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/sv.wav",
+  "audio_seconds": 15.0,
+  "language": "sv",
+  "mode": "verbatim",
+  "text": "Fria public domain. För mer information eller för att bidra gå in på LibriVox punkt org. inläsning Lars Rolander. Baron Olsson och andra historier av Sigge Strömberg.",
+  "tokens": null,
+  "words": [
+    {
+      "word": "Fria",
+      "start": 0.02,
+      "end": 0.5
+    },
+    {
+      "word": "public",
+      "start": 0.5,
+      "end": 0.96
+    },
+    {
+      "word": "domain.",
+      "start": 1.32,
+      "end": 1.58
+    },
+    {
+      "word": "För",
+      "start": 2.58,
+      "end": 2.68
+    },
+    {
+      "word": "mer",
+      "start": 2.8000000000000003,
+      "end": 2.9299999999999997
+    },
+    {
+      "word": "information",
+      "start": 2.9299999999999997,
+      "end": 3.7
+    },
+    {
+      "word": "eller",
+      "start": 3.7,
+      "end": 3.96
+    },
+    {
+      "word": "för",
+      "start": 3.96,
+      "end": 4.0600000000000005
+    },
+    {
+      "word": "att",
+      "start": 4.0600000000000005,
+      "end": 4.2
+    },
+    {
+      "word": "bidra",
+      "start": 4.32,
+      "end": 4.74
+    },
+    {
+      "word": "gå",
+      "start": 4.74,
+      "end": 5.0
+    },
+    {
+      "word": "in",
+      "start": 5.0,
+      "end": 5.18
+    },
+    {
+      "word": "på",
+      "start": 5.28,
+      "end": 5.34
+    },
+    {
+      "word": "LibriVox",
+      "start": 5.34,
+      "end": 5.94
+    },
+    {
+      "word": "punkt",
+      "start": 6.2,
+      "end": 6.32
+    },
+    {
+      "word": "org.",
+      "start": 6.54,
+      "end": 6.74
+    },
+    {
+      "word": "inläsning",
+      "start": 7.46,
+      "end": 8.14
+    },
+    {
+      "word": "Lars",
+      "start": 8.14,
+      "end": 8.56
+    },
+    {
+      "word": "Rolander.",
+      "start": 8.98,
+      "end": 9.3
+    },
+    {
+      "word": "Baron",
+      "start": 11.68,
+      "end": 11.92
+    },
+    {
+      "word": "Olsson",
+      "start": 11.92,
+      "end": 12.4
+    },
+    {
+      "word": "och",
+      "start": 12.4,
+      "end": 12.600000000000001
+    },
+    {
+      "word": "andra",
+      "start": 12.600000000000001,
+      "end": 12.86
+    },
+    {
+      "word": "historier",
+      "start": 12.86,
+      "end": 13.4
+    },
+    {
+      "word": "av",
+      "start": 13.4,
+      "end": 13.55
+    },
+    {
+      "word": "Sigge",
+      "start": 13.55,
+      "end": 13.780000000000001
+    },
+    {
+      "word": "Strömberg.",
+      "start": 13.92,
+      "end": 14.48
+    }
+  ]
+}

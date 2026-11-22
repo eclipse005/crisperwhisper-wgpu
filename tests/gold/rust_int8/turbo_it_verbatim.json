@@ -1,0 +1,162 @@
+{
+  "audio": "tests/audio/langs/it.wav",
+  "audio_seconds": 15.0,
+  "language": "it",
+  "mode": "verbatim",
+  "model_dir": "nyralabs/CrisperWhisper2.0_turbo",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50274,
+    50360,
+    50364
+  ],
+  "text": "Informazioni o per sapere come diventare volontario, visitate il sito librivox punto org, registrato da Simona Pagliari, Cagliari, Italia.",
+  "tokens": [
+    4575,
+    837,
+    27569,
+    277,
+    680,
+    18985,
+    323,
+    808,
+    3414,
+    317,
+    543,
+    40005,
+    4912,
+    11,
+    3441,
+    473,
+    1930,
+    1394,
+    78,
+    22854,
+    470,
+    3080,
+    87,
+    14326,
+    14045,
+    11,
+    11376,
+    43037,
+    1120,
+    3998,
+    4037,
+    430,
+    559,
+    2081,
+    3504,
+    11,
+    383,
+    559,
+    2081,
+    3504,
+    11,
+    41355,
+    13,
+    50257
+  ],
+  "words": [
+    {
+      "end": 0.7000000000000001,
+      "start": 0.02,
+      "word": "Informazioni"
+    },
+    {
+      "end": 1.26,
+      "start": 1.18,
+      "word": "o"
+    },
+    {
+      "end": 1.46,
+      "start": 1.36,
+      "word": "per"
+    },
+    {
+      "end": 2.08,
+      "start": 1.46,
+      "word": "sapere"
+    },
+    {
+      "end": 2.2800000000000002,
+      "start": 2.08,
+      "word": "come"
+    },
+    {
+      "end": 3.08,
+      "start": 2.2800000000000002,
+      "word": "diventare"
+    },
+    {
+      "end": 3.98,
+      "start": 3.08,
+      "word": "volontario,"
+    },
+    {
+      "end": 5.16,
+      "start": 4.6000000000000005,
+      "word": "visitate"
+    },
+    {
+      "end": 5.26,
+      "start": 5.16,
+      "word": "il"
+    },
+    {
+      "end": 5.76,
+      "start": 5.26,
+      "word": "sito"
+    },
+    {
+      "end": 7.22,
+      "start": 6.42,
+      "word": "librivox"
+    },
+    {
+      "end": 7.66,
+      "start": 7.5600000000000005,
+      "word": "punto"
+    },
+    {
+      "end": 8.36,
+      "start": 7.82,
+      "word": "org,"
+    },
+    {
+      "end": 10.3,
+      "start": 9.58,
+      "word": "registrato"
+    },
+    {
+      "end": 10.56,
+      "start": 10.3,
+      "word": "da"
+    },
+    {
+      "end": 11.3,
+      "start": 10.82,
+      "word": "Simona"
+    },
+    {
+      "end": 11.94,
+      "start": 11.3,
+      "word": "Pagliari,"
+    },
+    {
+      "end": 13.08,
+      "start": 12.540000000000001,
+      "word": "Cagliari,"
+    },
+    {
+      "end": 14.18,
+      "start": 13.72,
+      "word": "Italia."
+    }
+  ]
+}

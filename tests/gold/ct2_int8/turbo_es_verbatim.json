@@ -1,0 +1,128 @@
+{
+  "engine": "ct2_int8",
+  "compute_type": "int8",
+  "model": "nyralabs/CrisperWhisper2.0_turbo",
+  "audio": "tests/audio/langs/es.wav",
+  "audio_seconds": 15.0,
+  "language": "es",
+  "mode": "verbatim",
+  "text": "Ser voluntario, por favor visite LibriVox punto org. Grabada por Alejandro García en la Ciudad de México. Primera parte del ingenioso hidalgo Don",
+  "tokens": null,
+  "words": [
+    {
+      "word": "Ser",
+      "start": 0.04,
+      "end": 0.1
+    },
+    {
+      "word": "voluntario,",
+      "start": 0.1,
+      "end": 0.78
+    },
+    {
+      "word": "por",
+      "start": 1.24,
+      "end": 1.4
+    },
+    {
+      "word": "favor",
+      "start": 1.4,
+      "end": 1.78
+    },
+    {
+      "word": "visite",
+      "start": 2.0,
+      "end": 2.48
+    },
+    {
+      "word": "LibriVox",
+      "start": 2.48,
+      "end": 3.04
+    },
+    {
+      "word": "punto",
+      "start": 3.46,
+      "end": 3.52
+    },
+    {
+      "word": "org.",
+      "start": 4.1,
+      "end": 4.24
+    },
+    {
+      "word": "Grabada",
+      "start": 6.78,
+      "end": 7.26
+    },
+    {
+      "word": "por",
+      "start": 7.38,
+      "end": 7.6000000000000005
+    },
+    {
+      "word": "Alejandro",
+      "start": 7.82,
+      "end": 8.48
+    },
+    {
+      "word": "García",
+      "start": 8.48,
+      "end": 9.1
+    },
+    {
+      "word": "en",
+      "start": 9.6,
+      "end": 9.72
+    },
+    {
+      "word": "la",
+      "start": 9.72,
+      "end": 9.86
+    },
+    {
+      "word": "Ciudad",
+      "start": 9.86,
+      "end": 10.280000000000001
+    },
+    {
+      "word": "de",
+      "start": 10.280000000000001,
+      "end": 10.42
+    },
+    {
+      "word": "México.",
+      "start": 10.42,
+      "end": 10.94
+    },
+    {
+      "word": "Primera",
+      "start": 12.040000000000001,
+      "end": 12.48
+    },
+    {
+      "word": "parte",
+      "start": 12.48,
+      "end": 13.02
+    },
+    {
+      "word": "del",
+      "start": 13.02,
+      "end": 13.24
+    },
+    {
+      "word": "ingenioso",
+      "start": 13.24,
+      "end": 13.96
+    },
+    {
+      "word": "hidalgo",
+      "start": 13.96,
+      "end": 14.58
+    },
+    {
+      "word": "Don",
+      "start": 14.780000000000001,
+      "end": 14.88
+    }
+  ]
+}
