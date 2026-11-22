@@ -1,0 +1,217 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/it.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "it",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50274,
+    50360,
+    50364
+  ],
+  "tokens": [
+    23232,
+    1356,
+    27569,
+    277,
+    680,
+    18985,
+    323,
+    808,
+    3414,
+    317,
+    543,
+    40005,
+    4912,
+    11,
+    3441,
+    473,
+    1930,
+    1394,
+    78,
+    22854,
+    470,
+    3080,
+    87,
+    14326,
+    14045,
+    11,
+    11376,
+    43037,
+    1120,
+    3998,
+    4037,
+    430,
+    559,
+    2081,
+    3504,
+    11,
+    383,
+    559,
+    2081,
+    3504,
+    11,
+    41355,
+    13
+  ],
+  "text": "Per informazioni o per sapere come diventare volontario, visitate il sito librivox punto org, registrato da Simona Pagliari, Cagliari, Italia.",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    43,
+    1500
+  ],
+  "words": [
+    {
+      "word": "Per",
+      "start": 0.02,
+      "end": 0.08
+    },
+    {
+      "word": "informazioni",
+      "start": 0.08,
+      "end": 0.7000000000000001
+    },
+    {
+      "word": "o",
+      "start": 1.18,
+      "end": 1.26
+    },
+    {
+      "word": "per",
+      "start": 1.36,
+      "end": 1.46
+    },
+    {
+      "word": "sapere",
+      "start": 1.46,
+      "end": 2.08
+    },
+    {
+      "word": "come",
+      "start": 2.08,
+      "end": 2.2800000000000002
+    },
+    {
+      "word": "diventare",
+      "start": 2.2800000000000002,
+      "end": 3.08
+    },
+    {
+      "word": "volontario,",
+      "start": 3.08,
+      "end": 3.98
+    },
+    {
+      "word": "visitate",
+      "start": 4.58,
+      "end": 5.16
+    },
+    {
+      "word": "il",
+      "start": 5.16,
+      "end": 5.26
+    },
+    {
+      "word": "sito",
+      "start": 5.26,
+      "end": 5.76
+    },
+    {
+      "word": "librivox",
+      "start": 6.42,
+      "end": 7.22
+    },
+    {
+      "word": "punto",
+      "start": 7.5600000000000005,
+      "end": 7.66
+    },
+    {
+      "word": "org,",
+      "start": 7.82,
+      "end": 8.36
+    },
+    {
+      "word": "registrato",
+      "start": 9.58,
+      "end": 10.36
+    },
+    {
+      "word": "da",
+      "start": 10.36,
+      "end": 10.56
+    },
+    {
+      "word": "Simona",
+      "start": 10.82,
+      "end": 11.350000000000001
+    },
+    {
+      "word": "Pagliari,",
+      "start": 11.350000000000001,
+      "end": 11.94
+    },
+    {
+      "word": "Cagliari,",
+      "start": 12.540000000000001,
+      "end": 13.08
+    },
+    {
+      "word": "Italia.",
+      "start": 13.72,
+      "end": 14.18
+    }
+  ],
+  "attention_file": "gold_turbo_it_verbatim.attn.f32"
+}

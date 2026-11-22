@@ -1,0 +1,262 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/ru.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "ru",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50263,
+    50360,
+    50364
+  ],
+  "tokens": [
+    43494,
+    14045,
+    13,
+    639,
+    3760,
+    538,
+    4857,
+    7718,
+    693,
+    3515,
+    2348,
+    1218,
+    1135,
+    6251,
+    13,
+    7853,
+    3515,
+    3200,
+    1227,
+    982,
+    1700,
+    11,
+    15079,
+    9631,
+    11,
+    18539,
+    386,
+    20572,
+    4558,
+    489,
+    42208,
+    2209,
+    13,
+    3272,
+    859,
+    18835,
+    13,
+    2348,
+    16574,
+    681,
+    11,
+    2348,
+    16574,
+    681,
+    11,
+    3272,
+    859,
+    18835,
+    0,
+    3466,
+    10264,
+    481,
+    3903,
+    1218,
+    2552,
+    11,
+    21974,
+    3515,
+    740,
+    11423,
+    1234,
+    7550,
+    8008,
+    1084,
+    3842,
+    19536,
+    1055,
+    13
+  ],
+  "text": "dot org. This reading by Яковлев Валерий. Лев Толстой, детство, глава девятнадцать. Ивины. Володя, Володя, Ивины! — закричал я, увидев в окно трех мальчиков.",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    68,
+    1500
+  ],
+  "words": [
+    {
+      "word": "dot",
+      "start": 0.28,
+      "end": 0.42
+    },
+    {
+      "word": "org.",
+      "start": 0.72,
+      "end": 0.96
+    },
+    {
+      "word": "This",
+      "start": 1.86,
+      "end": 2.02
+    },
+    {
+      "word": "reading",
+      "start": 2.02,
+      "end": 2.4
+    },
+    {
+      "word": "by",
+      "start": 2.68,
+      "end": 2.84
+    },
+    {
+      "word": "Яковлев",
+      "start": 2.84,
+      "end": 3.34
+    },
+    {
+      "word": "Валерий.",
+      "start": 3.34,
+      "end": 3.92
+    },
+    {
+      "word": "Лев",
+      "start": 4.8,
+      "end": 5.03
+    },
+    {
+      "word": "Толстой,",
+      "start": 5.03,
+      "end": 5.71
+    },
+    {
+      "word": "детство,",
+      "start": 5.71,
+      "end": 6.38
+    },
+    {
+      "word": "глава",
+      "start": 6.74,
+      "end": 7.18
+    },
+    {
+      "word": "девятнадцать.",
+      "start": 7.36,
+      "end": 8.08
+    },
+    {
+      "word": "Ивины.",
+      "start": 8.72,
+      "end": 9.16
+    },
+    {
+      "word": "Володя,",
+      "start": 10.1,
+      "end": 10.54
+    },
+    {
+      "word": "Володя,",
+      "start": 10.54,
+      "end": 11.08
+    },
+    {
+      "word": "Ивины!",
+      "start": 11.5,
+      "end": 12.05
+    },
+    {
+      "word": "—",
+      "start": 12.05,
+      "end": 12.100000000000001
+    },
+    {
+      "word": "закричал",
+      "start": 12.100000000000001,
+      "end": 12.7
+    },
+    {
+      "word": "я,",
+      "start": 12.7,
+      "end": 13.100000000000001
+    },
+    {
+      "word": "увидев",
+      "start": 13.100000000000001,
+      "end": 13.48
+    },
+    {
+      "word": "в",
+      "start": 13.48,
+      "end": 13.52
+    },
+    {
+      "word": "окно",
+      "start": 13.52,
+      "end": 13.86
+    },
+    {
+      "word": "трех",
+      "start": 14.26,
+      "end": 14.57
+    },
+    {
+      "word": "мальчиков.",
+      "start": 14.57,
+      "end": 15.02
+    }
+  ],
+  "attention_file": "gold_turbo_ru_verbatim.attn.f32"
+}

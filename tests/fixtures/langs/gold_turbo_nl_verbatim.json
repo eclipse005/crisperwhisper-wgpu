@@ -1,0 +1,215 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/nl.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "nl",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50271,
+    50360,
+    50364
+  ],
+  "tokens": [
+    45,
+    529,
+    307,
+    45547,
+    3161,
+    257,
+    1169,
+    2156,
+    265,
+    21043,
+    999,
+    16344,
+    2853,
+    34738,
+    3066,
+    16292,
+    11,
+    44974,
+    67,
+    372,
+    2034,
+    1241,
+    911,
+    1053,
+    3639,
+    307,
+    3881,
+    8284,
+    521,
+    328,
+    1137,
+    1706,
+    31820,
+    4097,
+    4413,
+    335,
+    67,
+    1519,
+    3080,
+    2018,
+    13
+  ],
+  "text": "Name is vrij van auteursrechten opname door Marcel Coenders, hoofdstuk veertien het is een ellendig dat men zich beschaamd gevoelt.",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    41,
+    1500
+  ],
+  "words": [
+    {
+      "word": "Name",
+      "start": 0.02,
+      "end": 0.34
+    },
+    {
+      "word": "is",
+      "start": 0.8200000000000001,
+      "end": 0.96
+    },
+    {
+      "word": "vrij",
+      "start": 0.96,
+      "end": 1.18
+    },
+    {
+      "word": "van",
+      "start": 1.18,
+      "end": 1.42
+    },
+    {
+      "word": "auteursrechten",
+      "start": 1.42,
+      "end": 2.22
+    },
+    {
+      "word": "opname",
+      "start": 3.2800000000000002,
+      "end": 3.64
+    },
+    {
+      "word": "door",
+      "start": 3.8200000000000003,
+      "end": 3.87
+    },
+    {
+      "word": "Marcel",
+      "start": 3.87,
+      "end": 4.29
+    },
+    {
+      "word": "Coenders,",
+      "start": 4.29,
+      "end": 4.82
+    },
+    {
+      "word": "hoofdstuk",
+      "start": 5.94,
+      "end": 6.54
+    },
+    {
+      "word": "veertien",
+      "start": 6.640000000000001,
+      "end": 7.28
+    },
+    {
+      "word": "het",
+      "start": 10.78,
+      "end": 10.95
+    },
+    {
+      "word": "is",
+      "start": 10.95,
+      "end": 11.120000000000001
+    },
+    {
+      "word": "een",
+      "start": 11.120000000000001,
+      "end": 11.3
+    },
+    {
+      "word": "ellendig",
+      "start": 11.3,
+      "end": 11.870000000000001
+    },
+    {
+      "word": "dat",
+      "start": 11.870000000000001,
+      "end": 12.16
+    },
+    {
+      "word": "men",
+      "start": 12.82,
+      "end": 13.16
+    },
+    {
+      "word": "zich",
+      "start": 13.16,
+      "end": 13.4
+    },
+    {
+      "word": "beschaamd",
+      "start": 13.4,
+      "end": 14.06
+    },
+    {
+      "word": "gevoelt.",
+      "start": 14.06,
+      "end": 14.66
+    }
+  ],
+  "attention_file": "gold_turbo_nl_verbatim.attn.f32"
+}

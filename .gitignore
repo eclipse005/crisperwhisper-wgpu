@@ -1,0 +1,59 @@
+# Build
+/target/
+
+# Official checkpoints — download separately (Nyra non-commercial research license).
+# Never commit weights.
+/models/
+**/*.safetensors
+**/*.ot
+**/*.onnx
+**/*.ct2/
+**/model.bin
+
+# Caches
+/cache/
+/hf-cache/
+.hf-home/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Lab session output (not only *.log — logs/ also has .json / .stdout.txt / .stderr.txt)
+/logs/
+/scratch/
+*.log
+*.stdout.txt
+*.stderr.txt
+
+# Local / user audio. Legal 15 s language clips under tests/audio/langs/*.wav
+# may be committed (see tests/audio/langs/SOURCES.md). Raw downloads and
+# user-provided evaluation clips must stay out.
+*.mp3
+*.flac
+*.wav
+!tests/fixtures/**
+!tests/audio/langs/*.wav
+tests/audio/langs/_raw/
+tests/audio/user_langs/
+tests/audio/user_zh_ja/
+
+# User-audio-derived gold/rust transcripts and attention dumps (audio1/2/3).
+# These contain verbatim text of private/copyrighted evaluation material
+# and absolute lab paths. Do not publish.
+tests/fixtures/*audio1*
+tests/fixtures/*audio2*
+tests/fixtures/*audio3*
+
+# Lab benchmark dumps (absolute /workspace paths, machine PIDs, in-progress runs)
+tests/fixtures/bench_int8_all_models.json
+tests/fixtures/bench_rtfx_turbo.json
+tests/fixtures/rust_*.json.bak
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Lab acceptance notes — not part of the public tree
+STATUS.zh-CN.md

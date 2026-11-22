@@ -1,0 +1,229 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/es.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "es",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50262,
+    50360,
+    50364
+  ],
+  "tokens": [
+    31859,
+    17911,
+    4912,
+    11,
+    1515,
+    2294,
+    1452,
+    642,
+    15834,
+    470,
+    53,
+    5230,
+    14326,
+    14045,
+    13,
+    20357,
+    1538,
+    1515,
+    44568,
+    29173,
+    7995,
+    31298,
+    465,
+    635,
+    20188,
+    532,
+    345,
+    368,
+    28128,
+    13,
+    19671,
+    1663,
+    6975,
+    1103,
+    21600,
+    23540,
+    389,
+    22151,
+    1571,
+    1468
+  ],
+  "text": "Ser voluntario, por favor visite LibriVox punto org. Grabada por Alejandro García en la Ciudad de México. Primera parte del ingenioso Hidalgo Don",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    40,
+    1500
+  ],
+  "words": [
+    {
+      "word": "Ser",
+      "start": 0.04,
+      "end": 0.06
+    },
+    {
+      "word": "voluntario,",
+      "start": 0.06,
+      "end": 0.78
+    },
+    {
+      "word": "por",
+      "start": 1.28,
+      "end": 1.4
+    },
+    {
+      "word": "favor",
+      "start": 1.4,
+      "end": 1.78
+    },
+    {
+      "word": "visite",
+      "start": 2.0,
+      "end": 2.24
+    },
+    {
+      "word": "LibriVox",
+      "start": 2.44,
+      "end": 3.02
+    },
+    {
+      "word": "punto",
+      "start": 3.46,
+      "end": 3.52
+    },
+    {
+      "word": "org.",
+      "start": 4.1,
+      "end": 4.24
+    },
+    {
+      "word": "Grabada",
+      "start": 6.78,
+      "end": 7.26
+    },
+    {
+      "word": "por",
+      "start": 7.38,
+      "end": 7.6000000000000005
+    },
+    {
+      "word": "Alejandro",
+      "start": 7.82,
+      "end": 8.48
+    },
+    {
+      "word": "García",
+      "start": 8.48,
+      "end": 9.1
+    },
+    {
+      "word": "en",
+      "start": 9.6,
+      "end": 9.72
+    },
+    {
+      "word": "la",
+      "start": 9.72,
+      "end": 9.86
+    },
+    {
+      "word": "Ciudad",
+      "start": 9.86,
+      "end": 10.280000000000001
+    },
+    {
+      "word": "de",
+      "start": 10.280000000000001,
+      "end": 10.42
+    },
+    {
+      "word": "México.",
+      "start": 10.42,
+      "end": 10.94
+    },
+    {
+      "word": "Primera",
+      "start": 12.02,
+      "end": 12.469999999999999
+    },
+    {
+      "word": "parte",
+      "start": 12.469999999999999,
+      "end": 13.02
+    },
+    {
+      "word": "del",
+      "start": 13.02,
+      "end": 13.24
+    },
+    {
+      "word": "ingenioso",
+      "start": 13.24,
+      "end": 13.969999999999999
+    },
+    {
+      "word": "Hidalgo",
+      "start": 13.969999999999999,
+      "end": 14.58
+    },
+    {
+      "word": "Don",
+      "start": 14.780000000000001,
+      "end": 14.86
+    }
+  ],
+  "attention_file": "gold_turbo_es_verbatim.attn.f32"
+}

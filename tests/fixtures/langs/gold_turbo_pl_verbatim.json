@@ -1,0 +1,275 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/pl.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "pl",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50269,
+    50360,
+    50364
+  ],
+  "tokens": [
+    54,
+    5034,
+    20811,
+    1356,
+    2551,
+    72,
+    277,
+    17096,
+    81,
+    3782,
+    608,
+    15980,
+    20960,
+    896,
+    3504,
+    30805,
+    1667,
+    1056,
+    32242,
+    22854,
+    470,
+    3080,
+    87,
+    350,
+    1513,
+    2330,
+    14045,
+    6430,
+    1328,
+    430,
+    6471,
+    81,
+    426,
+    771,
+    13,
+    15029,
+    417,
+    76,
+    2991,
+    598,
+    677,
+    298,
+    714,
+    1180,
+    608,
+    9544,
+    16751,
+    72,
+    11,
+    1111,
+    20408,
+    1221,
+    5968,
+    267,
+    31723,
+    350,
+    2598,
+    23480,
+    1381,
+    11,
+    38322,
+    42643,
+    26393,
+    40633,
+    7753,
+    13
+  ],
+  "text": "Więcej informacyi o nagraniach lub wolontariacie na stronie librivox kropka org czyta Piotr Nater. Jak chmura co grom po polach roznosi, obiegł honorat wszystkie kurytarze, wszędzie wiadomość.",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    66,
+    1500
+  ],
+  "words": [
+    {
+      "word": "Więcej",
+      "start": 1.36,
+      "end": 1.57
+    },
+    {
+      "word": "informacyi",
+      "start": 1.57,
+      "end": 2.18
+    },
+    {
+      "word": "o",
+      "start": 2.18,
+      "end": 2.2600000000000002
+    },
+    {
+      "word": "nagraniach",
+      "start": 2.2600000000000002,
+      "end": 2.66
+    },
+    {
+      "word": "lub",
+      "start": 2.66,
+      "end": 2.8
+    },
+    {
+      "word": "wolontariacie",
+      "start": 2.8,
+      "end": 3.48
+    },
+    {
+      "word": "na",
+      "start": 3.48,
+      "end": 3.66
+    },
+    {
+      "word": "stronie",
+      "start": 3.7800000000000002,
+      "end": 3.88
+    },
+    {
+      "word": "librivox",
+      "start": 3.88,
+      "end": 4.54
+    },
+    {
+      "word": "kropka",
+      "start": 4.7,
+      "end": 4.98
+    },
+    {
+      "word": "org",
+      "start": 4.98,
+      "end": 5.22
+    },
+    {
+      "word": "czyta",
+      "start": 6.12,
+      "end": 6.34
+    },
+    {
+      "word": "Piotr",
+      "start": 6.34,
+      "end": 6.5200000000000005
+    },
+    {
+      "word": "Nater.",
+      "start": 6.5200000000000005,
+      "end": 7.0
+    },
+    {
+      "word": "Jak",
+      "start": 9.0,
+      "end": 9.15
+    },
+    {
+      "word": "chmura",
+      "start": 9.15,
+      "end": 9.7
+    },
+    {
+      "word": "co",
+      "start": 9.7,
+      "end": 9.86
+    },
+    {
+      "word": "grom",
+      "start": 9.86,
+      "end": 10.2
+    },
+    {
+      "word": "po",
+      "start": 10.2,
+      "end": 10.350000000000001
+    },
+    {
+      "word": "polach",
+      "start": 10.350000000000001,
+      "end": 10.66
+    },
+    {
+      "word": "roznosi,",
+      "start": 10.66,
+      "end": 11.440000000000001
+    },
+    {
+      "word": "obiegł",
+      "start": 11.440000000000001,
+      "end": 11.72
+    },
+    {
+      "word": "honorat",
+      "start": 11.92,
+      "end": 12.34
+    },
+    {
+      "word": "wszystkie",
+      "start": 12.34,
+      "end": 12.540000000000001
+    },
+    {
+      "word": "kurytarze,",
+      "start": 12.72,
+      "end": 13.46
+    },
+    {
+      "word": "wszędzie",
+      "start": 14.06,
+      "end": 14.36
+    },
+    {
+      "word": "wiadomość.",
+      "start": 14.36,
+      "end": 15.0
+    }
+  ],
+  "attention_file": "gold_turbo_pl_verbatim.attn.f32"
+}

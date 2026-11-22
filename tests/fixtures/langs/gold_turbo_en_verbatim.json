@@ -1,0 +1,292 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/en.wav",
+  "audio_seconds_full": 15.0,
+  "audio_seconds_used": 15.0,
+  "language": "en",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50259,
+    50360,
+    50364
+  ],
+  "tokens": [
+    5723,
+    307,
+    257,
+    15834,
+    470,
+    53,
+    5230,
+    6613,
+    13,
+    1057,
+    15834,
+    470,
+    53,
+    5230,
+    25162,
+    366,
+    294,
+    264,
+    1908,
+    9274,
+    13,
+    1171,
+    544,
+    1589,
+    11,
+    293,
+    281,
+    915,
+    484,
+    577,
+    291,
+    393,
+    13835,
+    11,
+    1767,
+    3441,
+    15834,
+    470,
+    53,
+    5230,
+    5893,
+    14045,
+    13,
+    9647,
+    3357,
+    538,
+    3335,
+    4271,
+    479,
+    664,
+    446,
+    88,
+    13
+  ],
+  "text": "This is a LibriVox recording. All LibriVox recordings are in the public domain. For more information, and to find out how you can volunteer, please visit LibriVox dot org. Recording by Moira Fogarty.",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    53,
+    1500
+  ],
+  "words": [
+    {
+      "word": "This",
+      "start": 1.56,
+      "end": 1.76
+    },
+    {
+      "word": "is",
+      "start": 1.76,
+      "end": 1.98
+    },
+    {
+      "word": "a",
+      "start": 1.98,
+      "end": 2.1
+    },
+    {
+      "word": "LibriVox",
+      "start": 2.1,
+      "end": 2.66
+    },
+    {
+      "word": "recording.",
+      "start": 2.66,
+      "end": 3.2
+    },
+    {
+      "word": "All",
+      "start": 3.9,
+      "end": 4.0600000000000005
+    },
+    {
+      "word": "LibriVox",
+      "start": 4.0600000000000005,
+      "end": 4.52
+    },
+    {
+      "word": "recordings",
+      "start": 4.52,
+      "end": 5.0200000000000005
+    },
+    {
+      "word": "are",
+      "start": 5.26,
+      "end": 5.4
+    },
+    {
+      "word": "in",
+      "start": 5.4,
+      "end": 5.52
+    },
+    {
+      "word": "the",
+      "start": 5.52,
+      "end": 5.58
+    },
+    {
+      "word": "public",
+      "start": 5.58,
+      "end": 5.9
+    },
+    {
+      "word": "domain.",
+      "start": 5.9,
+      "end": 6.36
+    },
+    {
+      "word": "For",
+      "start": 7.18,
+      "end": 7.32
+    },
+    {
+      "word": "more",
+      "start": 7.32,
+      "end": 7.5
+    },
+    {
+      "word": "information,",
+      "start": 7.5,
+      "end": 8.040000000000001
+    },
+    {
+      "word": "and",
+      "start": 8.24,
+      "end": 8.34
+    },
+    {
+      "word": "to",
+      "start": 8.34,
+      "end": 8.440000000000001
+    },
+    {
+      "word": "find",
+      "start": 8.440000000000001,
+      "end": 8.66
+    },
+    {
+      "word": "out",
+      "start": 8.66,
+      "end": 8.8
+    },
+    {
+      "word": "how",
+      "start": 8.8,
+      "end": 8.96
+    },
+    {
+      "word": "you",
+      "start": 8.96,
+      "end": 9.16
+    },
+    {
+      "word": "can",
+      "start": 9.16,
+      "end": 9.280000000000001
+    },
+    {
+      "word": "volunteer,",
+      "start": 9.280000000000001,
+      "end": 9.94
+    },
+    {
+      "word": "please",
+      "start": 10.38,
+      "end": 10.65
+    },
+    {
+      "word": "visit",
+      "start": 10.65,
+      "end": 10.98
+    },
+    {
+      "word": "LibriVox",
+      "start": 10.98,
+      "end": 11.8
+    },
+    {
+      "word": "dot",
+      "start": 11.92,
+      "end": 12.04
+    },
+    {
+      "word": "org.",
+      "start": 12.04,
+      "end": 12.42
+    },
+    {
+      "word": "Recording",
+      "start": 13.38,
+      "end": 13.82
+    },
+    {
+      "word": "by",
+      "start": 14.0,
+      "end": 14.120000000000001
+    },
+    {
+      "word": "Moira",
+      "start": 14.120000000000001,
+      "end": 14.56
+    },
+    {
+      "word": "Fogarty.",
+      "start": 14.56,
+      "end": 15.02
+    }
+  ],
+  "attention_file": "gold_turbo_en_verbatim.attn.f32"
+}

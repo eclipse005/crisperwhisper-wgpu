@@ -1,0 +1,86 @@
+{
+  "gold": "transformers_fp32_teacher_forced_attention",
+  "note": "Decoder-only teacher-forced cross-attention + official extract_word_timings. Avoids generate(output_attentions=True) OOM. Mel is features.py (padding=0 after 30s pad), same as the Rust extractor.",
+  "model": "turbo",
+  "model_path": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/ja.wav",
+  "audio_seconds_full": 1.4373125,
+  "audio_seconds_used": 1.4373125,
+  "language": "ja",
+  "mode": "verbatim",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50266,
+    50360,
+    50364
+  ],
+  "tokens": [
+    33,
+    7869
+  ],
+  "text": "BBC",
+  "alignment_heads": [
+    [
+      2,
+      11
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      17
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      18
+    ]
+  ],
+  "attention_shape": [
+    2,
+    1500
+  ],
+  "words": [
+    {
+      "word": "B",
+      "start": 0.02,
+      "end": 0.18
+    },
+    {
+      "word": "BC",
+      "start": 0.18,
+      "end": 0.88
+    }
+  ],
+  "attention_file": "gold_turbo_ja_verbatim.attn.f32"
+}

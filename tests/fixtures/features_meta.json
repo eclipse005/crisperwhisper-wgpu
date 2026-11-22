@@ -1,0 +1,172 @@
+{
+  "fixtures": [
+    {
+      "name": "noise",
+      "n_mels": 80,
+      "shape": [
+        80,
+        3000
+      ],
+      "source": "rng(0) * 0.1, 30s",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "noise_wave.f32",
+      "mel_file": "noise_mel80.f32",
+      "mel_min": -0.2874866724014282,
+      "mel_max": 0.8893816471099854,
+      "mel_mean": 0.6121645569801331,
+      "hf_max_abs_diff": 1.7881393432617188e-06,
+      "hf_mean_abs_diff": 2.546956068272266e-08,
+      "hf_allclose_1e5": true,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "noise",
+      "n_mels": 128,
+      "shape": [
+        128,
+        3000
+      ],
+      "source": "rng(0) * 0.1, 30s",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "noise_wave.f32",
+      "mel_file": "noise_mel128.f32",
+      "mel_min": -0.5010167360305786,
+      "mel_max": 0.9423167109489441,
+      "mel_mean": 0.5973881483078003,
+      "hf_max_abs_diff": 5.602836608886719e-06,
+      "hf_mean_abs_diff": 3.2281814554835364e-08,
+      "hf_allclose_1e5": true,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "silence",
+      "n_mels": 80,
+      "shape": [
+        80,
+        3000
+      ],
+      "source": "zeros, 30s",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "silence_wave.f32",
+      "mel_file": "silence_mel80.f32",
+      "mel_min": -1.500000238418579,
+      "mel_max": -1.500000238418579,
+      "mel_mean": -1.5000001192092896,
+      "hf_max_abs_diff": 2.384185791015625e-07,
+      "hf_mean_abs_diff": 2.384185791015625e-07,
+      "hf_allclose_1e5": true,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "silence",
+      "n_mels": 128,
+      "shape": [
+        128,
+        3000
+      ],
+      "source": "zeros, 30s",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "silence_wave.f32",
+      "mel_file": "silence_mel128.f32",
+      "mel_min": -1.500000238418579,
+      "mel_max": -1.500000238418579,
+      "mel_mean": -1.5000001192092896,
+      "hf_max_abs_diff": 2.384185791015625e-07,
+      "hf_mean_abs_diff": 2.384185791015625e-07,
+      "hf_allclose_1e5": true,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "jfk",
+      "n_mels": 80,
+      "shape": [
+        80,
+        3000
+      ],
+      "source": "/workspace/crisperwhisper-run/audio/jfk.flac",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "jfk_wave.f32",
+      "mel_file": "jfk_mel80.f32",
+      "mel_min": -0.5387461185455322,
+      "mel_max": 1.4612538814544678,
+      "mel_mean": -0.2950296401977539,
+      "hf_max_abs_diff": 2.372264862060547e-05,
+      "hf_mean_abs_diff": 3.520672464674135e-08,
+      "hf_allclose_1e5": false,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "jfk",
+      "n_mels": 128,
+      "shape": [
+        128,
+        3000
+      ],
+      "source": "/workspace/crisperwhisper-run/audio/jfk.flac",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "jfk_wave.f32",
+      "mel_file": "jfk_mel128.f32",
+      "mel_min": -0.5063116550445557,
+      "mel_max": 1.4936883449554443,
+      "mel_mean": -0.2811720073223114,
+      "hf_max_abs_diff": 2.3603439331054688e-05,
+      "hf_mean_abs_diff": 1.2442500008091884e-07,
+      "hf_allclose_1e5": false,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "jfk6s",
+      "n_mels": 80,
+      "shape": [
+        80,
+        3000
+      ],
+      "source": "/workspace/crisperwhisper-run/audio/jfk_6s.wav",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "jfk6s_wave.f32",
+      "mel_file": "jfk6s_mel80.f32",
+      "mel_min": -0.5387420654296875,
+      "mel_max": 1.4612579345703125,
+      "mel_mean": -0.4099457263946533,
+      "hf_max_abs_diff": 3.790855407714844e-05,
+      "hf_mean_abs_diff": 1.932755111511142e-08,
+      "hf_allclose_1e5": false,
+      "hf_allclose_1e4": true
+    },
+    {
+      "name": "jfk6s",
+      "n_mels": 128,
+      "shape": [
+        128,
+        3000
+      ],
+      "source": "/workspace/crisperwhisper-run/audio/jfk_6s.wav",
+      "extractor": "crisperwhisper.features.FeatureExtractor",
+      "padding": 0,
+      "padded_to_samples": 480000,
+      "wave_file": "jfk6s_wave.f32",
+      "mel_file": "jfk6s_mel128.f32",
+      "mel_min": -0.5063077211380005,
+      "mel_max": 1.4936922788619995,
+      "mel_mean": -0.38790225982666016,
+      "hf_max_abs_diff": 3.7789344787597656e-05,
+      "hf_mean_abs_diff": 2.3462964904297223e-08,
+      "hf_allclose_1e5": false,
+      "hf_allclose_1e4": true
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "audio": "/workspace/crisperwhisper-wgpu/tests/audio/langs/nl.wav",
+  "audio_seconds": 15.0,
+  "decode_seconds": 2.348691255,
+  "encode_seconds": 6.197169972,
+  "language": "nl",
+  "mode": "verbatim",
+  "model_dir": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_turbo/snapshots/de0369c8a68025b7f6e86387b6eb5a3b369787c8",
+  "prompt_tokens": [
+    51881,
+    51882,
+    51883,
+    51884,
+    51885,
+    50258,
+    50271,
+    50360,
+    50364
+  ],
+  "text": "Name is vrij van auteursrechten opname door Marcel Coenders, hoofdstuk veertien het is een ellendig dat men zich beschaamd gevoelt.",
+  "tokens": [
+    45,
+    529,
+    307,
+    45547,
+    3161,
+    257,
+    1169,
+    2156,
+    265,
+    21043,
+    999,
+    16344,
+    2853,
+    34738,
+    3066,
+    16292,
+    11,
+    44974,
+    67,
+    372,
+    2034,
+    1241,
+    911,
+    1053,
+    3639,
+    307,
+    3881,
+    8284,
+    521,
+    328,
+    1137,
+    1706,
+    31820,
+    4097,
+    4413,
+    335,
+    67,
+    1519,
+    3080,
+    2018,
+    13,
+    50257
+  ],
+  "words": [
+    {
+      "end": 0.34,
+      "start": 0.02,
+      "word": "Name"
+    },
+    {
+      "end": 0.96,
+      "start": 0.8200000000000001,
+      "word": "is"
+    },
+    {
+      "end": 1.18,
+      "start": 0.96,
+      "word": "vrij"
+    },
+    {
+      "end": 1.42,
+      "start": 1.18,
+      "word": "van"
+    },
+    {
+      "end": 2.22,
+      "start": 1.42,
+      "word": "auteursrechten"
+    },
+    {
+      "end": 3.64,
+      "start": 3.2800000000000002,
+      "word": "opname"
+    },
+    {
+      "end": 3.87,
+      "start": 3.8200000000000003,
+      "word": "door"
+    },
+    {
+      "end": 4.29,
+      "start": 3.87,
+      "word": "Marcel"
+    },
+    {
+      "end": 4.82,
+      "start": 4.29,
+      "word": "Coenders,"
+    },
+    {
+      "end": 6.54,
+      "start": 5.94,
+      "word": "hoofdstuk"
+    },
+    {
+      "end": 7.28,
+      "start": 6.640000000000001,
+      "word": "veertien"
+    },
+    {
+      "end": 10.95,
+      "start": 10.78,
+      "word": "het"
+    },
+    {
+      "end": 11.120000000000001,
+      "start": 10.95,
+      "word": "is"
+    },
+    {
+      "end": 11.3,
+      "start": 11.120000000000001,
+      "word": "een"
+    },
+    {
+      "end": 11.870000000000001,
+      "start": 11.3,
+      "word": "ellendig"
+    },
+    {
+      "end": 12.16,
+      "start": 11.870000000000001,
+      "word": "dat"
+    },
+    {
+      "end": 13.16,
+      "start": 12.82,
+      "word": "men"
+    },
+    {
+      "end": 13.4,
+      "start": 13.16,
+      "word": "zich"
+    },
+    {
+      "end": 14.06,
+      "start": 13.4,
+      "word": "beschaamd"
+    },
+    {
+      "end": 14.66,
+      "start": 14.06,
+      "word": "gevoelt."
+    }
+  ]
+}

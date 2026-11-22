@@ -1,0 +1,162 @@
+{
+  "audio": "/workspace/crisperwhisper-run/audio/jfk.flac",
+  "audio_seconds": 11.0,
+  "decode_seconds": 4.10650377,
+  "encode_seconds": 3.02311782,
+  "language": "en",
+  "mode": "verbatim",
+  "model_dir": "/workspace/crisperwhisper-run/hf-cache/hub/models--nyralabs--CrisperWhisper2.0_medium/snapshots/f011e4a7869860de1ce596391d53c18bf8853e77",
+  "prompt_tokens": [
+    51880,
+    51881,
+    51882,
+    51883,
+    51884,
+    50258,
+    50259,
+    50359,
+    50363
+  ],
+  "text": "And so, my fellow Americans, ask not what your country can do for you. Ask what you can do for your country.",
+  "tokens": [
+    5289,
+    370,
+    11,
+    452,
+    7177,
+    6280,
+    11,
+    1029,
+    406,
+    437,
+    428,
+    1941,
+    393,
+    360,
+    337,
+    291,
+    13,
+    12320,
+    437,
+    291,
+    393,
+    360,
+    337,
+    428,
+    1941,
+    13,
+    50257
+  ],
+  "words": [
+    {
+      "end": 0.54,
+      "start": 0.32,
+      "word": "And"
+    },
+    {
+      "end": 1.02,
+      "start": 0.54,
+      "word": "so,"
+    },
+    {
+      "end": 1.26,
+      "start": 1.02,
+      "word": "my"
+    },
+    {
+      "end": 1.6400000000000001,
+      "start": 1.26,
+      "word": "fellow"
+    },
+    {
+      "end": 2.12,
+      "start": 1.6400000000000001,
+      "word": "Americans,"
+    },
+    {
+      "end": 3.7800000000000002,
+      "start": 3.2600000000000002,
+      "word": "ask"
+    },
+    {
+      "end": 4.3,
+      "start": 3.7800000000000002,
+      "word": "not"
+    },
+    {
+      "end": 5.5600000000000005,
+      "start": 5.38,
+      "word": "what"
+    },
+    {
+      "end": 5.76,
+      "start": 5.5600000000000005,
+      "word": "your"
+    },
+    {
+      "end": 6.380000000000001,
+      "start": 5.76,
+      "word": "country"
+    },
+    {
+      "end": 6.66,
+      "start": 6.380000000000001,
+      "word": "can"
+    },
+    {
+      "end": 6.84,
+      "start": 6.66,
+      "word": "do"
+    },
+    {
+      "end": 7.08,
+      "start": 6.84,
+      "word": "for"
+    },
+    {
+      "end": 7.44,
+      "start": 7.08,
+      "word": "you."
+    },
+    {
+      "end": 8.5,
+      "start": 8.16,
+      "word": "Ask"
+    },
+    {
+      "end": 8.7,
+      "start": 8.5,
+      "word": "what"
+    },
+    {
+      "end": 9.04,
+      "start": 8.7,
+      "word": "you"
+    },
+    {
+      "end": 9.39,
+      "start": 9.04,
+      "word": "can"
+    },
+    {
+      "end": 9.600000000000001,
+      "start": 9.39,
+      "word": "do"
+    },
+    {
+      "end": 9.8,
+      "start": 9.600000000000001,
+      "word": "for"
+    },
+    {
+      "end": 10.0,
+      "start": 9.8,
+      "word": "your"
+    },
+    {
+      "end": 10.46,
+      "start": 10.0,
+      "word": "country."
+    }
+  ]
+}
