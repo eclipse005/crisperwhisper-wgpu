@@ -1,6 +1,15 @@
 fn main() {
     println!("cargo:rerun-if-changed=third_party/soxr");
     let msvc = std::env::var("CARGO_CFG_TARGET_ENV").ok().as_deref() == Some("msvc");
+    let linux = std::env::var("CARGO_CFG_TARGET_OS").ok().as_deref() == Some("linux");
+    let gnu = std::env::var("CARGO_CFG_TARGET_ENV").ok().as_deref() == Some("gnu");
+    let x86_64 = std::env::var("CARGO_CFG_TARGET_ARCH").ok().as_deref() == Some("x86_64");
+    // glibc libmvec + AVX-512 C wrapper: only on x86_64 Linux with glibc.
+    // The OS+ENV check is required so Windows-gnu and macOS never spawn `cc
+    // -mavx512f` or link `-lmvec`. The arch check avoids the same failure on
+    // aarch64-linux-gnu, which would otherwise match linux+gnu.
+    let use_libmvec = linux && gnu && x86_64;
+
     let opt = if msvc { "/O2" } else { "-O2" };
     let dst = cmake::Config::new("third_party/soxr")
         .define("BUILD_SHARED_LIBS", "OFF")
@@ -18,15 +27,19 @@ fn main() {
     println!("cargo:rustc-link-lib=static=soxr");
     if !msvc {
         println!("cargo:rustc-link-lib=m");
-        println!("cargo:rustc-link-lib=mvec");
+    }
+
+    if !use_libmvec {
+        return;
     }
 
     // glibc libmvec wrappers (AVX-512 16-wide expf/erff) for encoder kernels.
+    println!("cargo:rustc-link-lib=mvec");
+    println!("cargo:rerun-if-changed=src/libmvec_wrap.c");
     let cc = std::env::var("CC").unwrap_or_else(|_| "cc".into());
     let out = std::env::var("OUT_DIR").expect("OUT_DIR");
     let obj = std::path::Path::new(&out).join("libmvec_wrap.o");
     let src = std::path::Path::new("src/libmvec_wrap.c");
-    println!("cargo:rerun-if-changed=src/libmvec_wrap.c");
     let status = std::process::Command::new(&cc)
         .args(["-O3", "-mavx512f", "-c"])
         .arg(src)

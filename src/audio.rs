@@ -50,13 +50,17 @@ fn decode_file(path: &Path) -> Result<(Vec<f32>, u32, usize)> {
     }
     // Official `load_audio` uses libsndfile (Python soundfile) first. This
     // path is bit-identical to that decoder, including MP3 encoder delay
-    // and padding. Symphonia is the portable fallback.
+    // and padding. It is Unix-only (`dlopen`). On Windows, and on Unix when
+    // libsndfile is not installed, Symphonia is the portable fallback; WAV
+    // already went through hound above.
+    #[cfg(unix)]
     if let Ok(decoded) = decode_libsndfile(path) {
         return Ok(decoded);
     }
     decode_symphonia(path)
 }
 
+#[cfg(unix)]
 #[repr(C)]
 struct SfInfo {
     frames: i64,
@@ -67,6 +71,7 @@ struct SfInfo {
     seekable: i32,
 }
 
+#[cfg(unix)]
 fn decode_libsndfile(path: &Path) -> Result<(Vec<f32>, u32, usize)> {
     use std::ffi::{CStr, CString};
     use std::os::raw::{c_char, c_int, c_void};
@@ -85,7 +90,14 @@ fn decode_libsndfile(path: &Path) -> Result<(Vec<f32>, u32, usize)> {
     type SfClose = unsafe extern "C" fn(*mut c_void) -> c_int;
     type SfStrerror = unsafe extern "C" fn(*mut c_void) -> *const c_char;
 
-    let names = [c"libsndfile.so.1", c"libsndfile.so"];
+    // Linux ships .so; macOS Homebrew / system installs use .dylib.
+    // Trying both on every Unix is harmless if a name is absent.
+    let names = [
+        c"libsndfile.so.1",
+        c"libsndfile.so",
+        c"libsndfile.1.dylib",
+        c"libsndfile.dylib",
+    ];
     let mut handle = std::ptr::null_mut();
     for name in names {
         handle = unsafe { dlopen(name.as_ptr(), RTLD_LAZY) };

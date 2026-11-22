@@ -13,6 +13,11 @@ pub mod error;
 pub mod fallback;
 pub mod features;
 pub mod int8_gemm;
+#[cfg(all(
+    target_arch = "x86_64",
+    not(all(target_os = "linux", target_env = "gnu"))
+))]
+mod libmvec_shim;
 pub mod loop_detection;
 pub mod longform;
 pub mod model;

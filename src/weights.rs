@@ -11,11 +11,13 @@ use safetensors::{Dtype, SafeTensors};
 
 #[cfg(unix)]
 use std::os::unix::fs::FileExt;
+#[cfg(windows)]
+use std::os::windows::fs::FileExt;
 
 use crate::config::ModelConfig;
 use crate::cpu_tensor::{compute_type, CpuWeight, Linear};
-use crate::int8_gemm::Int8Mat;
 use crate::error::{Error, Result};
+use crate::int8_gemm::Int8Mat;
 
 pub struct LayerNormWeights {
     pub weight: Vec<f32>,
@@ -65,7 +67,7 @@ pub struct DecoderLayerWeights {
 }
 
 pub struct DecoderWeights {
-    pub embed_tokens: Vec<f32>,     // [vocab, d]
+    pub embed_tokens: Vec<f32>,    // [vocab, d]
     pub embed_positions: Vec<f32>, // [max_target, d]
     pub embed_tokens_int8: Option<Int8Mat>,
     pub layers: Vec<DecoderLayerWeights>,
@@ -134,7 +136,13 @@ trait WeightSrc {
         })
     }
 
-    fn attn(&self, prefix: &str, d: usize, n_heads: usize, is_encoder: bool) -> Result<AttentionWeights> {
+    fn attn(
+        &self,
+        prefix: &str,
+        d: usize,
+        n_heads: usize,
+        is_encoder: bool,
+    ) -> Result<AttentionWeights> {
         self.attn_force_fp32(prefix, d, n_heads, is_encoder, false)
     }
 
@@ -152,9 +160,30 @@ trait WeightSrc {
             )));
         }
         Ok(AttentionWeights {
-            q: self.linear_force_fp32(&format!("{prefix}.q_proj.weight"), Some(&format!("{prefix}.q_proj.bias")), d, d, is_encoder, force_fp32)?,
-            k: self.linear_force_fp32(&format!("{prefix}.k_proj.weight"), None, d, d, is_encoder, force_fp32)?,
-            v: self.linear_force_fp32(&format!("{prefix}.v_proj.weight"), Some(&format!("{prefix}.v_proj.bias")), d, d, is_encoder, force_fp32)?,
+            q: self.linear_force_fp32(
+                &format!("{prefix}.q_proj.weight"),
+                Some(&format!("{prefix}.q_proj.bias")),
+                d,
+                d,
+                is_encoder,
+                force_fp32,
+            )?,
+            k: self.linear_force_fp32(
+                &format!("{prefix}.k_proj.weight"),
+                None,
+                d,
+                d,
+                is_encoder,
+                force_fp32,
+            )?,
+            v: self.linear_force_fp32(
+                &format!("{prefix}.v_proj.weight"),
+                Some(&format!("{prefix}.v_proj.bias")),
+                d,
+                d,
+                is_encoder,
+                force_fp32,
+            )?,
             out: self.linear_force_fp32(
                 &format!("{prefix}.out_proj.weight"),
                 Some(&format!("{prefix}.out_proj.bias")),
@@ -195,8 +224,9 @@ impl<'a> WeightSrc for StLoader<'a> {
 }
 
 /// File-backed safetensors source: reads only the JSON header plus one tensor
-/// at a time via `pread`, so the 1.5 GiB official checkpoint is never kept
-/// resident as a whole mmap. Used by `ModelWeights::load`.
+/// at a time via positional reads (`pread` / Windows `seek_read`), so the
+/// 1.5 GiB official checkpoint is never kept resident as a whole mmap.
+/// Used by `ModelWeights::load`.
 struct FileLoader {
     file: File,
     data_start: u64,
@@ -268,7 +298,15 @@ impl FileLoader {
             if end < start {
                 return Err(Error::Model(format!("tensor {name} inverted data_offsets")));
             }
-            infos.insert(name.clone(), TensorLoc { dtype, shape, start, end });
+            infos.insert(
+                name.clone(),
+                TensorLoc {
+                    dtype,
+                    shape,
+                    start,
+                    end,
+                },
+            );
         }
         Ok(Self {
             file,
@@ -287,12 +325,40 @@ impl FileLoader {
                 .map_err(|e| Error::Model(format!("pread tensor at {off}: {e}")))?;
             return Ok(buf);
         }
-        #[cfg(not(unix))]
+        #[cfg(windows)]
         {
-            let _ = off;
-            Err(Error::Model(
-                "streaming safetensors load requires unix pread".into(),
-            ))
+            // seek_read is the pread analogue: it does not move the file
+            // cursor, so later tensor reads stay independent. Short reads
+            // are possible, so loop until the buffer is filled.
+            let mut got = 0usize;
+            while got < buf.len() {
+                let n = self
+                    .file
+                    .seek_read(&mut buf[got..], off + got as u64)
+                    .map_err(|e| {
+                        Error::Model(format!("seek_read tensor at {}: {e}", off + got as u64))
+                    })?;
+                if n == 0 {
+                    return Err(Error::Model(format!(
+                        "seek_read tensor at {off}: unexpected EOF"
+                    )));
+                }
+                got += n;
+            }
+            return Ok(buf);
+        }
+        #[cfg(not(any(unix, windows)))]
+        {
+            use std::io::{Seek, SeekFrom};
+            let mut file = self
+                .file
+                .try_clone()
+                .map_err(|e| Error::Model(format!("clone fd for tensor read at {off}: {e}")))?;
+            file.seek(SeekFrom::Start(off))
+                .map_err(|e| Error::Model(format!("seek tensor at {off}: {e}")))?;
+            file.read_exact(&mut buf)
+                .map_err(|e| Error::Model(format!("read tensor at {off}: {e}")))?;
+            Ok(buf)
         }
     }
 }
@@ -302,7 +368,9 @@ fn parse_st_dtype(s: &str) -> Result<Dtype> {
         "F32" => Ok(Dtype::F32),
         "F16" => Ok(Dtype::F16),
         "BF16" => Ok(Dtype::BF16),
-        other => Err(Error::Model(format!("unsupported safetensors dtype {other}"))),
+        other => Err(Error::Model(format!(
+            "unsupported safetensors dtype {other}"
+        ))),
     }
 }
 
@@ -419,7 +487,13 @@ fn build_weights(cfg: ModelConfig, loader: &impl WeightSrc) -> Result<ModelWeigh
                 let last_fp32 = int8 && i + 1 == cfg.encoder_layers;
                 Ok(EncoderLayerWeights {
                     self_attn_ln: loader.ln(&format!("{p}.self_attn_layer_norm"), d)?,
-                    self_attn: loader.attn_force_fp32(&format!("{p}.self_attn"), d, cfg.encoder_attention_heads, true, last_fp32)?,
+                    self_attn: loader.attn_force_fp32(
+                        &format!("{p}.self_attn"),
+                        d,
+                        cfg.encoder_attention_heads,
+                        true,
+                        last_fp32,
+                    )?,
                     final_ln: loader.ln(&format!("{p}.final_layer_norm"), d)?,
                     fc1: loader.linear_force_fp32(
                         &format!("{p}.fc1.weight"),
@@ -463,7 +537,12 @@ fn build_weights(cfg: ModelConfig, loader: &impl WeightSrc) -> Result<ModelWeigh
                 let p = format!("model.decoder.layers.{i}");
                 Ok(DecoderLayerWeights {
                     self_attn_ln: loader.ln(&format!("{p}.self_attn_layer_norm"), d)?,
-                    self_attn: loader.attn(&format!("{p}.self_attn"), d, cfg.decoder_attention_heads, false)?,
+                    self_attn: loader.attn(
+                        &format!("{p}.self_attn"),
+                        d,
+                        cfg.decoder_attention_heads,
+                        false,
+                    )?,
                     encoder_attn_ln: loader.ln(&format!("{p}.encoder_attn_layer_norm"), d)?,
                     encoder_attn: loader.attn(
                         &format!("{p}.encoder_attn"),
